@@ -1,0 +1,39 @@
+.navbar{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  /* border: 2px solid blue; */
+}
+
+.navbar-item{
+  flex: 1;
+}
+
+.navbar-item.brand{
+  flex: 2;
+  font-size: 2rem;
+  /* border: 2px solid red; */
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar-item.navbar-link-wrapper{
+  flex: 3;
+  /* border: 2px solid red; */
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  font-size: 1.5rem;
+}
+
+.navbar-link{
+  flex: 1;
+  /* border: 2px solid green; */
+}
+
+.nav-item{
+  font-family: 'Montserrat', sans-serif;
+  color: red;
+}
