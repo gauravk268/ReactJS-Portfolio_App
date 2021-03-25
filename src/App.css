@@ -9,7 +9,8 @@
   flex-direction: row;
   justify-content: space-between;
   align-content: center;
-  background: rgb(239, 227, 227);
+  background: #1a1a1a;
+  opacity: 0.4;
 
   padding-left: 15vw;
   padding-right: 15vw;
@@ -23,7 +24,7 @@
 
 .navbar-brand a,
 .navbar-item a {
-  color: #f22;
+  color: turquoise;
   font-weight: bold;
   font-family: "Montserrat", "Poppins", sans-serif;
   font-size: 1.5rem;
@@ -38,39 +39,59 @@
   margin: 0 1.5rem;
 }
 
-/* .navbar-item {
-  flex: 1;
-}
-
-.navbar-item.brand {
-  flex: 2;
-  font-size: 2rem;
-  border: 2px solid red;
-  font-family: "Poppins", sans-serif;
-}
-
-.navbar-item.navbar-link-wrapper {
-  flex: 3;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-content: center;
-  font-size: 1.5rem;
-}
-
-.navbar-link {
-  flex: 1;
-}
-
-.nav-item,
-.nav-item a {
-  font-family: "Montserrat", sans-serif;
-  color: red;
-} */
-
 /* Navbar Component Styling Ends */
 
-/* ProductView Component Styling Ends */
+/* Welcome Component Styling Starts */
+
+.welcome {
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url("./images/BG_pc.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.welcome-child {
+  flex: 1;
+  /* border: solid 2px red; */
+  justify-content: space-evenly;
+}
+
+.welcome-child.profile-img img {
+  border: 2px solid #555;
+  border-radius: 50%;
+  transform: scale(0.5);
+  margin: 0 auto;
+}
+
+.welcome-child.welcome-txt {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+/* Welcome Component Styling Ends */
+
+/* About Component Styling Starts */
+
+.about {
+  padding: 5vh 10vw;
+  background: #1a1a1a;
+  color: turquoise;
+}
+
+/* About Component Styling Ends */
+
+/* Education Component Styling Starts */
+
+/* Education Component Styling Ends */
 
 @media only screen and (max-width: 768px) {
   .navbar {
