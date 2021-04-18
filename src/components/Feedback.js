@@ -1,6 +1,6 @@
 const Feedback = () => {
   return (
-    <div className="feedback" id="about">
+    <div className="feedback p-5" id="about">
       <div class="container">
         <div class="feedback headTitle">Feedback</div>
         <div class="feedback-wrapper">

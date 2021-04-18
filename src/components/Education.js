@@ -2,7 +2,7 @@ import { ICON_jnv, ICON_mnnit } from "../images";
 
 const Education = () => {
   return (
-    <div class="education">
+    <div class="education p-5">
       <div class="education-child heading">Formal Education</div>
       <div class="education-child holder">
         <div class="holder-child education-card-1">

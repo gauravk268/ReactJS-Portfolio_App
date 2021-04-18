@@ -1,9 +1,14 @@
 import React from "react";
+import ProjectCard from "./ProjectCard";
+import projects from "./data/projects";
 
 function Projects(props) {
   return (
-    <div>
+    <div className="p-5">
       <h1>Projects</h1>
+      {projects.map((project) => (
+        <ProjectCard project={project} />
+      ))}
     </div>
   );
 }
