@@ -12,12 +12,11 @@ code {
     monospace;
 }
 
-.App {
-  /* text-align: center; */
-}
-
 .heading {
-  color: red;
+  font-family: "Montserrat", "Poppins", sans-serif;
+  font-weight: 900;
+  font-size: calc(3vw + 1rem);
+  color: rgba(0, 0, 0, 1);
 }
 
 /* Navbar Component Styling Starts */
@@ -109,6 +108,36 @@ code {
 
 /* Education Component Styling Starts */
 
+.education > .holder {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.holder-child {
+  flex: 1;
+  text-align: center;
+}
+
+.edu-class-body {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.edu-icon {
+  flex: 2;
+}
+
+.edu-data {
+  flex: 1;
+}
+
+.edu-class-body > .edu-icon > a > img {
+  width: calc(1vh + 128px);
+}
+
 /* Education Component Styling Ends */
 
 @media only screen and (max-width: 768px) {
@@ -124,5 +153,25 @@ code {
 
   .navbar-right-child.navbar-item {
     margin: 0 0.5rem;
+  }
+
+  .education > .holder {
+    flex-direction: column;
+  }
+
+  .edu-class-body {
+    flex-direction: row;
+  }
+
+  .edu-icon {
+    flex: 1;
+  }
+
+  .edu-data {
+    flex: 3;
+  }
+
+  .holder-child {
+    text-align: left;
   }
 }
