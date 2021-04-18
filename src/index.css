@@ -1,13 +1,124 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.App {
+  text-align: center;
+}
+
+/* Navbar Component Styling Starts */
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  background: #1a1a1a;
+  opacity: 0.4;
+
+  padding-left: 15vw;
+  padding-right: 15vw;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.navbar-brand a,
+.navbar-item a {
+  color: turquoise;
+  font-weight: bold;
+  font-family: "Montserrat", "Poppins", sans-serif;
+  font-size: 1.5rem;
+}
+
+.navbar-child.navbar-right {
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar-right-child.navbar-item {
+  margin: 0 1.5rem;
+}
+
+/* Navbar Component Styling Ends */
+
+/* Welcome Component Styling Starts */
+
+.welcome {
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url("./images/BG_pc.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.welcome-child {
+  flex: 1;
+  /* border: solid 2px red; */
+  justify-content: space-evenly;
+}
+
+.welcome-child.profile-img img {
+  border: 2px solid #555;
+  border-radius: 50%;
+  transform: scale(0.5);
+  margin: 0 auto;
+}
+
+.welcome-child.welcome-txt {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+/* Welcome Component Styling Ends */
+
+/* About Component Styling Starts */
+
+.about {
+  padding: 5vh 10vw;
+  background: #1a1a1a;
+  color: turquoise;
+}
+
+/* About Component Styling Ends */
+
+/* Education Component Styling Starts */
+
+/* Education Component Styling Ends */
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+
+  .navbar-brand a,
+  .navbar-item a {
+    font-size: 1.2rem;
+  }
+
+  .navbar-right-child.navbar-item {
+    margin: 0 0.5rem;
+  }
 }

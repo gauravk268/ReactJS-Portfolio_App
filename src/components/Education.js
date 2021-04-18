@@ -10,7 +10,7 @@ const Education = () => {
             <h2>B. Tech.</h2>
           </div>
           <div class="edu-class-body">
-            <a href="http://mnnit.ac.in" target="_blank" rel="noopener">
+            <a href="http://mnnit.ac.in" target="_blank" rel="noreferrer">
               <img class="edu-logo" src={ICON_mnnit} alt="MNNIT icon" />
             </a>
             <h3>Motilal Nehru National Institute of Technology Allahabad</h3>
@@ -29,7 +29,7 @@ const Education = () => {
             <a
               href="https://www.navodaya.gov.in/nvs/nvs-school/SONBHADRA/en/home/"
               target="_blank"
-              rel="noopener"
+              rel="noreferrer"
             >
               <img class="edu-logo" src={ICON_jnv} alt="JNV Icon" />
             </a>
@@ -48,7 +48,7 @@ const Education = () => {
             <a
               href="https://www.navodaya.gov.in/nvs/nvs-school/SONBHADRA/en/home/"
               target="_blank"
-              rel="noopener"
+              rel="noreferrer"
             >
               <img class="edu-logo" src={ICON_jnv} alt="JNV Icon" />
             </a>

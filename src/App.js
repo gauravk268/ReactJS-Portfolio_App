@@ -1,4 +1,3 @@
-import "./App.css";
 import { Navbar, Welcome, About, Education, Feedback } from "./components";
 
 function App() {
