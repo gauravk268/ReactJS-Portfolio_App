@@ -4,7 +4,7 @@ function Footer(props) {
   return (
     <div className="footer footer-dark p-5 text-center">
       <p>Designed & Developed by Gaurav Kumar</p>
-      <footer>
+      <div className="icons">
         <a
           className="footer-icon linkedin"
           href="https://www.linkedin.com/in/gauravk268"
@@ -49,7 +49,7 @@ function Footer(props) {
             src="/assets/icons/quora-icon-logo-by-Vexels.png"
           />
         </a>
-      </footer>
+      </div>
     </div>
   );
 }

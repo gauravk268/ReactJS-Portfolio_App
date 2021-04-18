@@ -2,7 +2,7 @@ import React from "react";
 
 function ProjectCard(props) {
   return (
-    <div>
+    <div className="projectCard p-2">
       <h1>{props.project.title}</h1>
       <h3>{props.project.description}</h3>
       <button class="btn btn-link">

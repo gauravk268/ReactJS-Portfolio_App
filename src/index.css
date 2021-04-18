@@ -146,6 +146,21 @@ code {
 
 /* Education Component Styling Ends */
 
+/* Skills Component Styling Starts */
+
+.section-skills-wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+.skills-holder,
+.lang-holder,
+.tools-holder {
+  flex: 1;
+}
+
+/* Skills Component Styling Ends */
+
 /* Feedback Component Styling Starts */
 
 .feedback > .feedback-wrapper {
@@ -153,6 +168,21 @@ code {
 }
 
 /* Feedback Component Styling Ends */
+
+/* Footer Component Styling Starts */
+
+.footer {
+  color: white;
+  font-family: Poppins, "Courier New", Courier, monospace;
+  font-size: calc(1vh + 0.75rem);
+  background: rgba(74, 0, 224, 0.7);
+}
+
+.footer > .icons > a > img {
+  padding: 0 calc(1vw + 0.5rem);
+}
+
+/* Footer Component Styling Ends */
 
 @media only screen and (max-width: 768px) {
   .navbar {
@@ -187,5 +217,9 @@ code {
 
   .holder-child {
     text-align: left;
+  }
+
+  .section-skills-wrapper {
+    flex-direction: column;
   }
 }
