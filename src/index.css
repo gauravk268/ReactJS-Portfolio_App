@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  position: absolute;
 }
 
 code {
@@ -17,6 +18,11 @@ code {
   font-weight: 900;
   font-size: calc(3vw + 1rem);
   color: rgba(0, 0, 0, 1);
+}
+
+.App {
+  margin: 0;
+  padding: 0;
 }
 
 /* Navbar Component Styling Starts */
@@ -139,6 +145,14 @@ code {
 }
 
 /* Education Component Styling Ends */
+
+/* Feedback Component Styling Starts */
+
+.feedback > .feedback-wrapper {
+  max-width: 80vh;
+}
+
+/* Feedback Component Styling Ends */
 
 @media only screen and (max-width: 768px) {
   .navbar {
