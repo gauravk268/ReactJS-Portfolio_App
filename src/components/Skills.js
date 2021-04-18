@@ -2,10 +2,10 @@ import React from "react";
 
 function Skills(props) {
   return (
-    <div className="section-skills">
-      <div className="section-skills-wrapper container">
+    <div className="section-skills p-5">
+      <div className="section-skills-wrapper">
         <div className="skills-holder">
-          <div className="skills headTitle">Skills</div>
+          <h1 className="skills heading">Skills</h1>
           <ul className="skills-list">
             <h4>
               <li>Machine Learning</li>
@@ -17,7 +17,7 @@ function Skills(props) {
         </div>
 
         <div className="lang-holder">
-          <div className="lang headTitle">Languages</div>
+          <h1 className="lang heading">Languages</h1>
           <ul className="lang-list">
             <h4>
               <li>C/C++</li>
@@ -30,7 +30,7 @@ function Skills(props) {
         </div>
 
         <div className="tools-holder">
-          <div className="tools headTitle">Tools</div>
+          <h1 className="tools heading">Tools</h1>
           <ul className="frame-tools-list">
             <h4>
               <li>Bootstrap</li>

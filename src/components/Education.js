@@ -1,9 +1,9 @@
-import { ICON_jnv, ICON_mnnit } from "../images";
+import React from "react";
 
 const Education = () => {
   return (
     <div class="education p-5">
-      <div class="education-child heading">Formal Education</div>
+      <h1 class="education-child heading">Formal Education</h1>
       <div class="education-child holder">
         <div class="holder-child education-card-1">
           <div class="edu-class-head">
@@ -11,7 +11,11 @@ const Education = () => {
           </div>
           <div class="edu-class-body">
             <a href="http://mnnit.ac.in" target="_blank" rel="noreferrer">
-              <img class="edu-logo" src={ICON_mnnit} alt="MNNIT icon" />
+              <img
+                class="edu-logo"
+                src="/assets/images/mnnit.png"
+                alt="MNNIT icon"
+              />
             </a>
             <h3>Motilal Nehru National Institute of Technology Allahabad</h3>
             <h4>
@@ -31,7 +35,11 @@ const Education = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <img class="edu-logo" src={ICON_jnv} alt="JNV Icon" />
+              <img
+                class="edu-logo"
+                src="/assets/images/jnv.jpeg"
+                alt="JNV Icon"
+              />
             </a>
             <h3>Jawahar Navodaya Vidyalaya Sonbhadra</h3>
             <h4>
@@ -50,7 +58,11 @@ const Education = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <img class="edu-logo" src={ICON_jnv} alt="JNV Icon" />
+              <img
+                class="edu-logo"
+                src="/assets/images/jnv.jpeg"
+                alt="JNV Icon"
+              />
             </a>
             <h3>Jawahar Navodaya Vidyalaya Sonbhadra</h3>
             <h4>
