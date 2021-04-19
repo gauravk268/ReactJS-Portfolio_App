@@ -25,6 +25,13 @@ code {
   padding: 0;
 }
 
+a,
+a:hover,
+a:focus {
+  text-decoration: none;
+  color: white;
+}
+
 /* Navbar Component Styling Starts */
 
 .navbar {
@@ -160,6 +167,22 @@ code {
 }
 
 /* Skills Component Styling Ends */
+
+/* Project Component Styling Starts */
+
+.project-card.title {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.project-card.desc {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* Project Component Styling Ends */
+
+/* Courses Component Styling Starts */
+
+/* Courses Component Styling Ends */
 
 /* Feedback Component Styling Starts */
 
