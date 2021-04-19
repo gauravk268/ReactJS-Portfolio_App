@@ -155,15 +155,20 @@ a:focus {
 
 /* Skills Component Styling Starts */
 
-.section-skills-wrapper {
+.wrapper {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .skills-holder,
 .lang-holder,
 .tools-holder {
   flex: 1;
+  /* border: 2px solid red; */
+}
+
+.section-skills .wrapper .list li {
+  color: rgba(0, 0, 0, 0.8);
 }
 
 /* Skills Component Styling Ends */

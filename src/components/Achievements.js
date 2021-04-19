@@ -2,7 +2,7 @@ import React from "react";
 
 function Achievements(props) {
   return (
-    <div className="achiev p-5">
+    <div className="section-achiev p-5">
       <h1 className="heading">Achievements</h1>
       <ul>
         <h4>

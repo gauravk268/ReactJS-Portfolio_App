@@ -2,7 +2,7 @@ import React from "react";
 
 function Courses(props) {
   return (
-    <div className="courses p-5">
+    <div className="section-courses p-5">
       <h1 className="heading">Courses</h1>
       <ul>
         <h3>
