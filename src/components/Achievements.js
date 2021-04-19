@@ -5,7 +5,7 @@ function Achievements(props) {
     <div className="section-achiev p-5" id="achiev">
       <h1 className="heading">Achievements</h1>
       <ul>
-        <h4>
+        <h3>
           <li className="achiev detail">
             Participated in the e-Yantra competition 2019-20 (IIT Bombay).
           </li>
@@ -20,7 +20,7 @@ function Achievements(props) {
             Participated in the IARC and Manual Robotics event of Avishkar 2018
             (MNNIT Allahabad).
           </li>
-        </h4>
+        </h3>
       </ul>
     </div>
   );

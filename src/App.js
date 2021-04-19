@@ -1,6 +1,6 @@
 import {
   Navbar,
-  Welcome,
+  // Welcome,
   About,
   Education,
   Skills,

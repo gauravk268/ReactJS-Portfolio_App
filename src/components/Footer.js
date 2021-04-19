@@ -3,7 +3,7 @@ import React from "react";
 function Footer(props) {
   return (
     <div className="footer footer-dark text-center" id="contact">
-      <p>Designed & Developed by Gaurav Kumar</p>
+      <h4>Designed & Developed by Gaurav Kumar</h4>
       <div className="icons px-5">
         <a
           className="footer-icon linkedin"
@@ -53,7 +53,7 @@ function Footer(props) {
       <img
         className="site-footer"
         src="/assets/images/footer.svg"
-        alt="footer picture"
+        alt="footer"
       />
     </div>
   );

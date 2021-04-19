@@ -4,9 +4,9 @@ const About = () => {
       <img
         className="site-header"
         src="/assets/images/header.svg"
-        alt="header picture"
+        alt="header"
       />
-      <h4 className="about desc px-5">
+      <h3 className="about desc px-5">
         <p>
           My name is Gaurav Kumar and I'm an aspiring Web Developer. Coming from
           India, I am currently pursuing Electronics and Communications
@@ -21,7 +21,7 @@ const About = () => {
           Connect. 😇
         </p>
         <p>Don't forget to follow me on Github Too!</p>
-      </h4>
+      </h3>
     </div>
   );
 };

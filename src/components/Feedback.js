@@ -7,7 +7,7 @@ const Feedback = () => {
           <div className="feedback-element feedback-head">
             <div className="form-group">
               <label for="name">
-                <h4>Name</h4>
+                <h3>Name</h3>
               </label>
               <input
                 type="text"
@@ -19,7 +19,7 @@ const Feedback = () => {
             </div>
             <div className="form-group">
               <label for="email">
-                <h4>Email address</h4>
+                <h3>Email address</h3>
               </label>
               <input
                 type="email"
@@ -36,7 +36,7 @@ const Feedback = () => {
           <div className="feedback-element feedback-body">
             <div className="form-group">
               <label for="feedback">
-                <h4>Feedback</h4>
+                <h3>Feedback</h3>
               </label>
               <textarea className="form-control" name="feedback"></textarea>
             </div>

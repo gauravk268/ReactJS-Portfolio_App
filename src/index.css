@@ -32,6 +32,22 @@ a:focus {
   color: white;
 }
 
+h1 {
+  font-size: 2.1rem;
+}
+
+h2 {
+  font-size: 1.9rem;
+}
+
+h3 {
+  font-size: 1.7rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
 /* Navbar Component Styling Starts */
 
 .navbar {
@@ -109,6 +125,7 @@ a:focus {
 .about.desc {
   max-width: 800px;
   margin: 0 auto;
+  /* font-size: calc(0.5vh + 1rem); */
 }
 
 .section-about img.site-header {
@@ -133,11 +150,14 @@ a:focus {
 .holder-child {
   flex: 1;
   text-align: center;
+  /* border: 2px solid red; */
+  margin-top: 1rem;
 }
 
 .edu-class-body {
   text-align: center;
   justify-content: center;
+  align-items: center;
   display: flex;
   flex-direction: column;
 }
@@ -151,7 +171,7 @@ a:focus {
 }
 
 .edu-class-body > .edu-icon > a > img {
-  width: calc(1vh + 128px);
+  width: calc(1vh + 100px);
 }
 
 /* Education Component Styling Ends */
@@ -161,6 +181,7 @@ a:focus {
 .wrapper {
   display: flex;
   justify-content: space-between;
+  /* width: 100%; */
 }
 
 .skills-holder,
@@ -249,6 +270,10 @@ a:focus {
   color: rgba(0, 0, 0, 0.7);
 }
 
+.section-feedback textarea {
+  height: 6rem;
+}
+
 /* Feedback Component Styling Ends */
 
 /* Footer Component Styling Starts */
@@ -271,6 +296,22 @@ a:focus {
 /* Footer Component Styling Ends */
 
 @media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  h4 {
+    font-size: 0.9rem;
+  }
+
   .navbar {
     padding-left: 5vw;
     padding-right: 5vw;
@@ -278,7 +319,7 @@ a:focus {
 
   .navbar-brand a,
   .navbar-item a {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .navbar-right-child.navbar-item {
@@ -305,7 +346,7 @@ a:focus {
     text-align: left;
   }
 
-  .section-skills-wrapper {
+  .wrapper {
     flex-direction: column;
   }
 }
