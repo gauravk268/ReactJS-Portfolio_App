@@ -2,9 +2,9 @@ import React from "react";
 
 function Footer(props) {
   return (
-    <div className="footer footer-dark p-5 text-center">
+    <div className="footer footer-dark text-center">
       <p>Designed & Developed by Gaurav Kumar</p>
-      <div className="icons">
+      <div className="icons px-5">
         <a
           className="footer-icon linkedin"
           href="https://www.linkedin.com/in/gauravk268"
@@ -50,6 +50,11 @@ function Footer(props) {
           />
         </a>
       </div>
+      <img
+        className="site-footer"
+        src="/assets/images/footer.png"
+        alt="footer picture"
+      />
     </div>
   );
 }

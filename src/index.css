@@ -39,22 +39,20 @@ a:focus {
   flex-direction: row;
   justify-content: space-between;
   align-content: center;
-  background: #1a1a1a;
-  opacity: 0.4;
+  background: linear-gradient(
+    to right,
+    rgba(142, 45, 226, 1) 0%,
+    rgba(74, 0, 224, 0.84) 100%
+  );
+  margin: 0;
 
   padding-left: 15vw;
   padding-right: 15vw;
-
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 10;
 }
 
 .navbar-brand a,
 .navbar-item a {
-  color: turquoise;
+  color: rgba(0, 0, 0, 1);
   font-weight: bold;
   font-family: "Montserrat", "Poppins", sans-serif;
   font-size: 1.5rem;
@@ -111,10 +109,18 @@ a:focus {
 
 /* About Component Styling Starts */
 
-.about {
-  padding: 5vh 10vw;
-  background: rgba(74, 0, 224, 0.7);
-  color: white;
+.about.desc {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.section-about img.site-header {
+  /* border-top: 2px solid red; */
+  width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 /* About Component Styling Ends */
@@ -175,6 +181,12 @@ a:focus {
 
 /* Project Component Styling Starts */
 
+.section-project {
+  max-width: 900px;
+  margin: 0 auto;
+  /* border: 2px solid red; */
+}
+
 .project-card.title {
   color: rgba(0, 0, 0, 0.7);
 }
@@ -186,6 +198,11 @@ a:focus {
 /* Project Component Styling Ends */
 
 /* Courses Component Styling Starts */
+
+.section-courses {
+  max-width: 900px;
+  margin: 0 auto;
+}
 
 .course.main {
   color: rgba(0, 0, 0, 0.7);
@@ -199,6 +216,11 @@ a:focus {
 
 /* Achievements Component Styling Starts */
 
+.section-achiev {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
 .achiev.detail {
   color: rgba(0, 0, 0, 0.7);
 }
@@ -206,6 +228,12 @@ a:focus {
 /* Achievements Component Styling Ends */
 
 /* Feedback Component Styling Starts */
+
+.section-feedback {
+  /* border: 2px solid red; */
+  max-width: 900px;
+  margin: 0 auto;
+}
 
 .section-feedback > .feedback-wrapper {
   max-width: 80vh;
@@ -220,14 +248,18 @@ a:focus {
 /* Footer Component Styling Starts */
 
 .footer {
-  color: white;
+  padding-top: 0.5rem;
   font-family: Poppins, "Courier New", Courier, monospace;
   font-size: calc(1vh + 0.75rem);
-  background: rgba(74, 0, 224, 0.7);
 }
 
 .footer > .icons > a > img {
   padding: 0 calc(1vw + 0.5rem);
+}
+
+.footer img.site-footer {
+  width: 100%;
+  height: auto;
 }
 
 /* Footer Component Styling Ends */

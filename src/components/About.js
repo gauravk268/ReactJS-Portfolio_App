@@ -1,7 +1,12 @@
 const About = () => {
   return (
-    <div className="about text-center" id="about">
-      <h4>
+    <div className="section-about text-center" id="about">
+      <img
+        className="site-header"
+        src="/assets/images/header.png"
+        alt="header picture"
+      />
+      <h4 className="about desc px-5">
         <p>
           My name is Gaurav Kumar and I'm an aspiring Web Developer. Coming from
           India, I am currently pursuing Electronics and Communications
