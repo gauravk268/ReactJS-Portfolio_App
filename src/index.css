@@ -182,7 +182,23 @@ a:focus {
 
 /* Courses Component Styling Starts */
 
+.course.main {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.course.desc {
+  color: rgba(0, 0, 0, 0.5);
+}
+
 /* Courses Component Styling Ends */
+
+/* Achievements Component Styling Starts */
+
+.achiev.detail {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+/* Achievements Component Styling Ends */
 
 /* Feedback Component Styling Starts */
 

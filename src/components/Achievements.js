@@ -2,21 +2,21 @@ import React from "react";
 
 function Achievements(props) {
   return (
-    <div className="p-5">
+    <div className="achiev p-5">
       <h1 className="heading">Achievements</h1>
       <ul>
         <h4>
-          <li>
+          <li className="achiev detail">
             Participated in the e-Yantra competition 2019-20 (IIT Bombay).
           </li>
-          <li>
+          <li className="achiev detail">
             Runner Up in Embedded System Design Event of Avishkar 2019 (MNNIT
             Allahabad).
           </li>
-          <li>
+          <li className="achiev detail">
             Participated in the IARC challenge in Techkriti 2019 (IIT Kanpur).
           </li>
-          <li>
+          <li className="achiev detail">
             Participated in the IARC and Manual Robotics event of Avishkar 2018
             (MNNIT Allahabad).
           </li>
