@@ -207,8 +207,12 @@ a:focus {
 
 /* Feedback Component Styling Starts */
 
-.feedback > .feedback-wrapper {
+.section-feedback > .feedback-wrapper {
   max-width: 80vh;
+}
+
+.section-feedback label {
+  color: rgba(0, 0, 0, 0.7);
 }
 
 /* Feedback Component Styling Ends */

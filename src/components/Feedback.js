@@ -1,6 +1,6 @@
 const Feedback = () => {
   return (
-    <div className="feedback p-5" id="about">
+    <div className="section-feedback p-5" id="about">
       <h1 className="feedback heading">Feedback</h1>
       <div className="feedback-wrapper">
         <form action="/feedback" method="post">
