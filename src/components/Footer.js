@@ -2,7 +2,7 @@ import React from "react";
 
 function Footer(props) {
   return (
-    <div className="footer footer-dark text-center">
+    <div className="footer footer-dark text-center" id="contact">
       <p>Designed & Developed by Gaurav Kumar</p>
       <div className="icons px-5">
         <a
@@ -52,7 +52,7 @@ function Footer(props) {
       </div>
       <img
         className="site-footer"
-        src="/assets/images/footer.png"
+        src="/assets/images/footer.svg"
         alt="footer picture"
       />
     </div>

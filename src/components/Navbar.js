@@ -8,13 +8,13 @@ const Navbar = () => {
       </div>
       <div className="navbar-child navbar-right">
         <div className="navbar-right-child navbar-item">
-          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+        </div>
+        <div className="navbar-right-child navbar-item">
+          <a href="#achiev">Achievements</a>
         </div>
         <div className="navbar-right-child navbar-item">
           <a href="#contact">Contact</a>
-        </div>
-        <div className="navbar-right-child navbar-item">
-          <a href="#cart">Projects</a>
         </div>
       </div>
     </div>
