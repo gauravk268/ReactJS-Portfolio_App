@@ -3,7 +3,7 @@ const About = () => {
     <div className="section-about text-center" id="about">
       <img
         className="site-header"
-        src="/assets/images/header.png"
+        src="/assets/images/header.svg"
         alt="header picture"
       />
       <h4 className="about desc px-5">

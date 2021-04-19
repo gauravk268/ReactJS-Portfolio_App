@@ -39,11 +39,8 @@ a:focus {
   flex-direction: row;
   justify-content: space-between;
   align-content: center;
-  background: linear-gradient(
-    to right,
-    rgba(142, 45, 226, 1) 0%,
-    rgba(74, 0, 224, 0.84) 100%
-  );
+  background: linear-gradient(90deg, #8e2de2 0%, rgba(74, 0, 224, 0.84) 98.64%),
+    #ffffff;
   margin: 0;
 
   padding-left: 15vw;
@@ -52,7 +49,7 @@ a:focus {
 
 .navbar-brand a,
 .navbar-item a {
-  color: rgba(0, 0, 0, 1);
+  color: white;
   font-weight: bold;
   font-family: "Montserrat", "Poppins", sans-serif;
   font-size: 1.5rem;
@@ -195,6 +192,10 @@ a:focus {
   color: rgba(0, 0, 0, 0.5);
 }
 
+.project-card .btn {
+  background: rgba(99, 20, 177, 0.8);
+}
+
 /* Project Component Styling Ends */
 
 /* Courses Component Styling Starts */
@@ -235,6 +236,11 @@ a:focus {
   margin: 0 auto;
 }
 
+.section-feedback button {
+  color: white;
+  background: rgba(99, 20, 177, 0.8);
+  border: none;
+}
 .section-feedback > .feedback-wrapper {
   max-width: 80vh;
 }
