@@ -214,8 +214,19 @@ h4 {
   color: rgba(0, 0, 0, 0.5);
 }
 
-.project-card .btn {
+.project-card .btn.btn-primary {
   background: rgba(99, 20, 177, 0.8);
+}
+
+.project-card .card {
+  max-width: 70vw;
+  margin: 0 auto;
+  /* border: 2px solid red; */
+}
+
+.project-card .btn.btn-info {
+  color: white;
+  margin-right: 1rem;
 }
 
 /* Project Component Styling Ends */

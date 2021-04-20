@@ -14,9 +14,19 @@ function ProjectCard(props) {
           <p className="project-card card-text">{props.project.description}</p>
         </div>
         <div className="card-footer">
-          <a className="btn btn-primary" href={props.project.githubLink}>
+          {props.project.demoLink && (
+            <a className="btn btn-info" href={props.project.demoLink}>
+              Live
+            </a>
+          )}
+          {props.project.githubLink && (
+            <a className="btn btn-primary" href={props.project.demoLink}>
+              Github Repo
+            </a>
+          )}
+          {/* <a className="btn btn-primary" href={props.project.githubLink}>
             Github Repo
-          </a>
+          </a> */}
         </div>
       </div>
     </div>
