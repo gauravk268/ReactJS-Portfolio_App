@@ -4,11 +4,13 @@ import projects from "./data/projects";
 
 function Projects(props) {
   return (
-    <div className="section-project p-5" id="projects">
+    <div className="section-project" id="projects">
       <h1 className="heading">Projects</h1>
-      {projects.map((project) => (
-        <ProjectCard project={project} />
-      ))}
+      <div className="row">
+        {projects.map((project) => (
+          <ProjectCard project={project} />
+        ))}
+      </div>
     </div>
   );
 }
