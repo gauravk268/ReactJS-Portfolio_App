@@ -141,6 +141,18 @@ h4 {
 
 /* Education Component Styling Starts */
 
+.section-education {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding-left: 2.5rem;
+}
+
+.section-education img {
+  width: 100%;
+  height: auto;
+  /* border: 2px solid red; */
+}
+
 .education > .holder {
   display: flex;
   flex-direction: row;
@@ -216,16 +228,16 @@ h4 {
 
 .project-card .btn.btn-primary {
   background: rgba(99, 20, 177, 0.8);
+  border: none;
 }
 
 .project-card .card {
-  max-width: 70vw;
   margin: 0 auto;
   /* border: 2px solid red; */
 }
 
 .project-card .btn.btn-info {
-  color: white;
+  color: black;
   margin-right: 1rem;
 }
 
@@ -360,5 +372,9 @@ h4 {
 
   .wrapper {
     flex-direction: column;
+  }
+
+  .project-card .card {
+    max-width: 60%;
   }
 }
