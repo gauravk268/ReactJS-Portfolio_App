@@ -41,19 +41,19 @@ h1 {
 }
 
 h2 {
-  font-size: 1.9rem;
+  font-size: 1.8rem;
 }
 
 h3 {
-  font-size: 1.7rem;
-}
-
-h4 {
   font-size: 1.5rem;
 }
 
+h4 {
+  font-size: 1.2rem;
+}
+
 p {
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 /* Navbar Component Styling Starts */
@@ -94,7 +94,6 @@ p {
 /* About Component Styling Starts */
 
 .section-about {
-  /* background: #191a1d; */
   background: linear-gradient(90deg, #8e2de2 0%, rgba(74, 0, 224, 0.84) 98.64%),
     #ffffff;
   padding: 0;
@@ -112,21 +111,17 @@ p {
 .section-about .about {
   max-width: 600px;
   line-height: 1.5rem;
-  color: rgb(253, 247, 186);
   text-align: left;
 }
 
 .section-about .wrapper .about h1 {
-  font-size: 3.5rem;
   color: #fff;
   font-family: "Montserrat", "Poppins", sans-serif;
   padding: 0.9rem 0;
 }
 
-.section-about .wrapper .about h2 {
-  font-size: 1.75rem;
+.section-about .wrapper .about h5 {
   color: #cad5ec;
-  line-height: 3rem;
   font-family: "Poppins", sans-serif;
 }
 
@@ -155,6 +150,11 @@ p {
   flex: 1;
 }
 
+.section-about .curve-bottom {
+  /* border: 2px solid red; */
+  width: 100%;
+}
+
 /* About Component Styling Ends */
 
 /* Education Component Styling Starts */
@@ -171,25 +171,29 @@ p {
   /* border: 2px solid red; */
 }
 
-.education > .holder {
+.section-education > .holder {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
 
-.holder-child {
+.section-education .holder-child {
   flex: 1;
   text-align: center;
-  /* border: 2px solid red; */
+  border: 2px solid red;
   margin-top: 1rem;
 }
 
-.edu-class-body {
+.section-education .holder .edu-class .body {
   text-align: center;
   justify-content: center;
   align-items: center;
   display: flex;
   flex-direction: column;
+}
+
+.section-education .holder .edu-class .head {
+  text-align: center;
 }
 
 .edu-icon {
@@ -200,7 +204,7 @@ p {
   flex: 1;
 }
 
-.edu-class-body > .edu-icon > a > img {
+.section-education .holder .edu-class .body > .edu-icon > a > img {
   width: calc(1vh + 100px);
 }
 
@@ -217,11 +221,6 @@ p {
 .edu-holder {
   display: flex;
   flex-direction: row;
-  transition: left 0.5s;
-}
-
-.edu-holder div h3 {
-  color: #c5c6c7;
 }
 
 .edu-class {
@@ -231,15 +230,6 @@ p {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-}
-
-.edu-class:hover,
-.edu-class:focus {
-  box-shadow: 0 64px 64px 0 rgba(0, 0, 0, 0.5);
-  border-radius: 18px;
-  transform: scale(1.05);
-  transition: all 1s;
-  background-color: rgba(56, 62, 87, 0.3);
 }
 
 /* Education Component Styling Ends */
@@ -279,7 +269,6 @@ p {
   max-width: 1024px;
   margin: 0 auto;
   padding-left: 2.5rem;
-  /* border: 2px solid red; */
 }
 
 .project-card.title {
@@ -297,12 +286,16 @@ p {
 
 .project-card .card {
   margin: 0 auto;
-  /* border: 2px solid red; */
 }
 
 .project-card .btn.btn-info {
   color: black;
   margin-right: 1rem;
+}
+
+.section-project .project-card .btn {
+  border-radius: 1.2rem;
+  line-height: 1.5rem;
 }
 
 /* Project Component Styling Ends */
@@ -316,6 +309,10 @@ p {
 .section-courses .wrapper {
   max-width: 900px;
   margin: 0 auto;
+}
+
+.section-courses .wrapper li {
+  line-height: 2rem;
 }
 
 .course.main {
@@ -335,7 +332,11 @@ p {
   margin: 0 auto;
 }
 
-.achiev.detail {
+.section-achiev li {
+  line-height: 2.2rem;
+}
+
+.section-achiev .achiev.detail {
   color: rgba(0, 0, 0, 0.7);
 }
 
@@ -354,6 +355,7 @@ p {
   background: rgba(99, 20, 177, 0.8);
   border: none;
 }
+
 .section-feedback > .feedback-wrapper {
   max-width: 80vh;
   padding-left: 10%;
@@ -364,7 +366,11 @@ p {
 }
 
 .section-feedback textarea {
-  height: 6rem;
+  height: 7rem;
+}
+
+.section-feedback button {
+  border-radius: 1.5rem;
 }
 
 /* Feedback Component Styling Ends */
@@ -372,13 +378,16 @@ p {
 /* Footer Component Styling Starts */
 
 .footer {
-  /* background: #191a1d; */
   background: linear-gradient(90deg, #8e2de2 0%, rgba(74, 0, 224, 0.84) 98.64%),
     #ffffff;
   color: white;
   padding-bottom: 1rem;
   font-family: Poppins, "Courier New", Courier, monospace;
   font-size: calc(1vh + 0.75rem);
+}
+
+.footer .curve-site-footer {
+  width: 100%;
 }
 
 .footer > .icons > a > img {
@@ -427,44 +436,89 @@ p {
     flex-direction: column;
   }
 
-  .edu-holder {
+  .section-about {
+    padding-bottom: 1rem;
+  }
+
+  .section-about .curve-bottom {
+    display: none;
+  }
+
+  .section-education {
+    padding: 0 1.5rem;
+  }
+
+  .section-education .holder {
     flex-direction: column;
   }
 
-  .edu-class {
+  .section-education .holder .edu-class {
     flex-direction: row;
-    justify-content: center;
+    display: flex;
+    justify-content: space-around;
     align-items: center;
-    max-width: 700px;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    width: 100%;
+    border: 1px solid rgba(56, 62, 87, 0.3);
+    border-radius: 1rem;
   }
 
-  .edu-class-head {
+  .section-education .holder .edu-class .head {
     flex: 1;
+    text-align: left;
   }
 
-  .edu-class-body {
+  .section-education .holder .edu-class .body {
     flex: 3;
     top: 80%;
     bottom: 0;
   }
 
-  .night .edu-class-body {
+  .section-education .holder .edu-class .body {
     border-left: 4px solid #4b6cc1;
   }
 
-  .edu-class-body a {
+  .section-education .holder .edu-class .body a {
     display: none;
   }
 
-  .holder-child {
-    text-align: left;
-  }
-
-  .wrapper {
+  .section-skills .wrapper {
     flex-direction: column;
+    padding-left: 0;
   }
 
-  .project-card .card {
-    max-width: 60%;
+  .section-project {
+    padding-left: 1rem;
+  }
+
+  .section-project .project-card {
+    margin: 0;
+    padding: 0;
+  }
+
+  .section-project .project-card .card {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .section-courses .wrapper li {
+    line-height: 1.5rem;
+  }
+
+  .section-achiev li {
+    line-height: 1.6rem;
+  }
+
+  .section-feedback > .feedback-wrapper {
+    padding-left: 0;
+  }
+
+  .footer {
+    padding: 1rem 0;
+  }
+
+  .footer .curve-site-footer {
+    display: none;
   }
 }

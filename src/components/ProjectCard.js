@@ -2,7 +2,7 @@ import React from "react";
 
 function ProjectCard(props) {
   return (
-    <div className="project-card col-lg-4 col-md-6 col-sm-6 col-xs-6 mb-5 d-flex">
+    <div className="project-card col-lg-4 col-md-6 col-sm-10 mb-5 d-flex">
       <div className="card flex-fill">
         <img
           className="card-img-top"
@@ -10,7 +10,9 @@ function ProjectCard(props) {
           alt="Card cap"
         />
         <div className="card-body">
-          <h4 className="project-card card-title">{props.project.title}</h4>
+          <h3 className="project-card card-title">
+            <strong>{props.project.title}</strong>
+          </h3>
           <p className="project-card card-text">{props.project.description}</p>
         </div>
         <div className="card-footer">
@@ -20,13 +22,10 @@ function ProjectCard(props) {
             </a>
           )}
           {props.project.githubLink && (
-            <a className="btn btn-primary" href={props.project.demoLink}>
+            <a className="btn btn-primary" href={props.project.githubLink}>
               Github Repo
             </a>
           )}
-          {/* <a className="btn btn-primary" href={props.project.githubLink}>
-            Github Repo
-          </a> */}
         </div>
       </div>
     </div>

@@ -30,7 +30,6 @@ const Feedback = () => {
                 placeholder="Enter email"
                 required=""
               />
-              {/* <!-- <small id="emailHelp" className="form-text text-muted">We'll never share your email with anyone else.</small> --> */}
             </div>
           </div>
 

@@ -4,7 +4,7 @@ function Footer(props) {
   return (
     <div className="footer footer-dark text-center" id="contact">
       <img
-        className="site-footer w-100"
+        className="curve-site-footer"
         src="/assets/illustrations/curve-bottom-white.svg"
         alt="footer"
       />

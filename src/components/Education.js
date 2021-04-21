@@ -3,14 +3,12 @@ import React from "react";
 const Education = () => {
   return (
     <div className="section-education">
-      <div className="heading">Formal Education</div>
+      <div className="heading">Education</div>
       <hr />
-      <div className="edu-holder">
-        <div className="edu-class edu-3">
-          <div className="edu-class-head">
-            <h2>B. Tech.</h2>
-          </div>
-          <div className="edu-class-body">
+      <div className="holder">
+        <div className="edu-class">
+          <h1 className="head">B. Tech.</h1>
+          <div className="body">
             <a href="http://mnnit.ac.in" target="_blank" rel="noreferrer">
               <img
                 className="edu-logo"
@@ -18,18 +16,16 @@ const Education = () => {
                 alt="MNNIT icon"
               />
             </a>
-            <h3>MNNIT Allahabad, Prayagraj</h3>
-            <h4>
+            <h2>MNNIT Allahabad, Prayagraj</h2>
+            <h3>
               <strong>ECE: </strong> 7.25 (6th Sem)
-            </h4>
+            </h3>
           </div>
         </div>
 
-        <div className="edu-class edu-2">
-          <div className="edu-class-head">
-            <h2>Class XII</h2>
-          </div>
-          <div className="edu-class-body">
+        <div className="edu-class">
+          <h1 className="head">Class XII</h1>
+          <div className="body">
             <a
               href="https://www.navodaya.gov.in/nvs/nvs-school/SONBHADRA/en/home/"
               target="_blank"
@@ -41,18 +37,16 @@ const Education = () => {
                 alt="JNV Icon"
               />
             </a>
-            <h3>JNV Sonbhadra</h3>
-            <h4>
+            <h2>JNV Sonbhadra</h2>
+            <h3>
               <strong>CBSE: </strong> 92.8%
-            </h4>
+            </h3>
           </div>
         </div>
 
-        <div className="edu-class edu-1">
-          <div className="edu-class-head">
-            <h2>Class X</h2>
-          </div>
-          <div className="edu-class-body">
+        <div className="edu-class">
+          <h1 className="head">Class X</h1>
+          <div className="body">
             <a
               href="https://www.navodaya.gov.in/nvs/nvs-school/SONBHADRA/en/home/"
               target="_blank"
@@ -64,10 +58,10 @@ const Education = () => {
                 alt="JNV Icon"
               />
             </a>
-            <h3>JNV Sonbhadra</h3>
-            <h4>
+            <h2>JNV Sonbhadra</h2>
+            <h3>
               <strong>CBSE: </strong> 91.2%
-            </h4>
+            </h3>
           </div>
         </div>
       </div>
