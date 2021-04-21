@@ -14,7 +14,7 @@ const Navbar = () => {
           <a href="/#achiev">Achievements</a>
         </div>
         <div className="navbar-right-child navbar-item">
-          <a href="/#contact">Contact</a>
+          <a href="/contact">Contact</a>
         </div>
       </div>
     </div>

@@ -5,7 +5,6 @@ import Skills from "./Skills";
 import Projects from "./Projects";
 import Courses from "./Courses";
 import Achievements from "./Achievements";
-import Feedback from "./Feedback";
 
 function Homepage(props) {
   return (
@@ -16,7 +15,6 @@ function Homepage(props) {
       <Projects />
       <Courses />
       <Achievements />
-      <Feedback />
     </div>
   );
 }

@@ -1,7 +1,18 @@
+import React from "react";
+
 const Feedback = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
   return (
     <div className="section-feedback p-5" id="about">
-      <h1 className="feedback heading">Feedback</h1>
+      <h1 className="feedback heading">Get in touch</h1>
+      <small className="alert-danger">
+        Service currently not working.
+        <br /> Mail on{" "}
+        <a href="mailto:gauravk26800@gmail.com">gauravk26800@gmail.com</a>
+        <br /> Sorry for the inconvenience.
+      </small>
       <hr />
       <div className="feedback-wrapper">
         <form action="https://gauravk268.herokuapp.com/feedback" method="post">
@@ -36,11 +47,14 @@ const Feedback = () => {
           <div className="feedback-element feedback-body">
             <div className="form-group">
               <label for="feedback">
-                <h3>Feedback</h3>
+                <h3>Message</h3>
               </label>
               <textarea className="form-control" name="feedback"></textarea>
             </div>
-            <button type="submit" className="btn btn-primary my-2 w-100">
+            <button
+              onClick={handleSubmit}
+              className="btn btn-primary my-2 w-100"
+            >
               Send
             </button>
           </div>

@@ -375,6 +375,10 @@ p {
   border-radius: 1.5rem;
 }
 
+.section-feedback a {
+  color: black;
+}
+
 /* Feedback Component Styling Ends */
 
 /* Footer Component Styling Starts */
