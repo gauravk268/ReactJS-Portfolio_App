@@ -1,30 +1,19 @@
-import {
-  Navbar,
-  // Welcome,
-  About,
-  Education,
-  Skills,
-  Projects,
-  Courses,
-  Achievements,
-  Feedback,
-  Footer,
-} from "./components";
+import React from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { Navbar, Homepage, Footer, Error404 } from "./components";
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      {/* <Welcome /> */}
-      <About />
-      <Education />
-      <Skills />
-      <Projects />
-      <Courses />
-      <Achievements />
-      <Feedback />
-      <Footer />
-    </div>
+    <Router>
+      <div className="App">
+        <Navbar />
+        <Switch>
+          <Route path="/" exact component={() => <Homepage />} />
+          <Route path="*" component={() => <Error404 />} />
+        </Switch>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 

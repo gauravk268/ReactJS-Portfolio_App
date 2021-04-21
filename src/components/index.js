@@ -1,21 +1,6 @@
 import Navbar from "./Navbar";
-import About from "./About";
-import Education from "./Education";
-import Skills from "./Skills";
-import Projects from "./Projects";
-import Courses from "./Courses";
-import Achievements from "./Achievements";
-import Feedback from "./Feedback";
+import Homepage from "./Homepage";
 import Footer from "./Footer";
+import Error404 from "./Error404";
 
-export {
-  Navbar,
-  About,
-  Education,
-  Skills,
-  Projects,
-  Courses,
-  Achievements,
-  Feedback,
-  Footer,
-};
+export { Navbar, Homepage, Footer, Error404 };

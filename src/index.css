@@ -4,9 +4,9 @@
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: "Montserrat", "Poppins", sans-serif, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   position: absolute;
@@ -402,6 +402,36 @@ p {
 }
 
 /* Footer Component Styling Ends */
+
+/* 404 Component Styling Starts */
+
+.section-error-404 {
+  height: 50vh;
+  align-items: center;
+  margin-top: 20vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.section-error-404 .style-error-mark {
+  font-size: 8rem;
+  color: red;
+  border: 10px solid red;
+  margin: 0 auto;
+  border-radius: 50%;
+  width: 11rem;
+  height: 11rem;
+}
+
+.section-error-404 .btn {
+  font-family: "Poppins", sans-serif;
+  border: none;
+  border-radius: 1.5rem;
+  line-height: 1.2rem;
+  background: rgba(99, 20, 177, 0.8);
+}
+
+/* 404 Component Styling Ends */
 
 @media only screen and (max-width: 768px) {
   h1 {
