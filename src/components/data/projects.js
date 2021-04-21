@@ -1,5 +1,6 @@
 const projects = [
   {
+    key: 1111,
     title: ".CBS [ Code-Brigade Services ]",
     image: "/assets/images/project/cbs.jpg",
     description:
@@ -8,6 +9,7 @@ const projects = [
     demoLink: "https://code-brigade.co",
   },
   {
+    key: 1112,
     title: "PORTFOLIO WEBSITE",
     image: "/assets/images/project/portfolio.png",
     description:
@@ -16,6 +18,7 @@ const projects = [
     demoLink: "https://gauravk.co",
   },
   {
+    key: 1113,
     title: "Identify the Dance Form",
     image: "/assets/images/project/default.jpg",
     description:
@@ -25,6 +28,7 @@ const projects = [
     demoLink: "",
   },
   {
+    key: 1114,
     title: "Sentiment Analysis on Mother's Day Tweet",
     image: "/assets/images/project/default.jpg",
     description:
@@ -34,6 +38,7 @@ const projects = [
     demoLink: "",
   },
   {
+    key: 1115,
     title: "Emotion Detection of Tom & Jerry",
     image: "/assets/images/project/default.jpg",
     description:
@@ -43,6 +48,7 @@ const projects = [
     demoLink: "",
   },
   {
+    key: 1116,
     title: "16x16 LED Matrix",
     image: "/assets/images/project/led_matrix.jpg",
     description:

@@ -9,10 +9,12 @@ function Skills(props) {
           <hr />
           <ul className="list">
             <h3>
-              <li>Machine Learning</li>
-              <li>Deep Learning</li>
               <li>Data Structure & Operating Systems</li>
-              <li>Front-End Web-Development</li>
+              <li>Web-Development</li>
+              <li>Operating System</li>
+              <li>DBMS</li>
+              <li>Computer Networks</li>
+              <li>Machine Learning</li>
             </h3>
           </ul>
         </div>
@@ -26,7 +28,6 @@ function Skills(props) {
               <li>Python3</li>
               <li>HTML, CSS</li>
               <li>JavaScript</li>
-              <li>NodeJS, ExpressJS</li>
             </h3>
           </ul>
         </div>
@@ -36,11 +37,12 @@ function Skills(props) {
           <hr />
           <ul className="list">
             <h3>
-              <li>Bootstrap</li>
-              <li>OpenCV</li>
+              <li>ReactJS</li>
+              <li>NodeJS</li>
+              <li>MongoDB</li>
+              <li>Firebase</li>
               <li>GitHub</li>
-              <li>Ubuntu</li>
-              <li>Jupyter Notebook</li>
+              <li>Bootstrap</li>
             </h3>
           </ul>
         </div>

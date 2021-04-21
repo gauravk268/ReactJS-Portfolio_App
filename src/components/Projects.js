@@ -9,7 +9,7 @@ function Projects(props) {
       <hr />
       <div className="row">
         {projects.map((project) => (
-          <ProjectCard project={project} />
+          <ProjectCard project={project} key={project.key} />
         ))}
       </div>
     </div>

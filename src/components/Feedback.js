@@ -4,7 +4,7 @@ const Feedback = () => {
       <h1 className="feedback heading">Feedback</h1>
       <hr />
       <div className="feedback-wrapper">
-        <form action="/feedback" method="post">
+        <form action="https://gauravk268.herokuapp.com/feedback" method="post">
           <div className="feedback-element feedback-head">
             <div className="form-group">
               <label for="name">
