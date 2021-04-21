@@ -6,7 +6,7 @@ function Footer(props) {
       <img
         className="curve-site-footer"
         src="/assets/illustrations/curve-bottom-white.svg"
-        alt="footer"
+        alt="footer curve"
       />
       <h4>Designed & Developed by Gaurav Kumar</h4>
       <div className="icons px-5">

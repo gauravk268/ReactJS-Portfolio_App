@@ -40,7 +40,7 @@ const Feedback = () => {
               </label>
               <textarea className="form-control" name="feedback"></textarea>
             </div>
-            <button type="submit" className="btn btn-info my-2 w-100">
+            <button type="submit" className="btn btn-primary my-2 w-100">
               Send
             </button>
           </div>
