@@ -1,5 +1,4 @@
 import Navbar from "./Navbar";
-import Welcome from "./Welcome";
 import About from "./About";
 import Education from "./Education";
 import Skills from "./Skills";
@@ -11,7 +10,6 @@ import Footer from "./Footer";
 
 export {
   Navbar,
-  Welcome,
   About,
   Education,
   Skills,

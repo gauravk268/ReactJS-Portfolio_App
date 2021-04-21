@@ -1,27 +1,23 @@
 const About = () => {
   return (
     <div className="section-about text-center" id="about">
+      <div className="wrapper">
+        <div className="about desc p-5">
+          <h1>Hey, I'm Gaurav</h1>
+          <h2 className="display-5">
+            A web designer and developer from MNNIT Allahabad in the India. I
+            love to create websites and always eager to learn new things.
+          </h2>
+          <a className="btn btn-info" href="projects">
+            My Projects
+          </a>
+        </div>
+        <img className="avatar" src="/assets/images/profile-orig.png" />
+      </div>
       <img
-        className="site-header"
-        src="/assets/images/header.svg"
-        alt="header"
+        className="curve-bottom w-100"
+        src="/assets/illustrations/curve-top-white.svg"
       />
-      <h3 className="about desc px-5">
-        <p>
-          My name is Gaurav Kumar and I'm an aspiring Web Developer. Coming from
-          India, I am currently pursuing Electronics and Communications
-          Engineering at MNNIT Allahabad. I love to learn new things. 😊
-        </p>
-        <p>
-          When I am free, you can find me scrolling through Quora, busy with
-          Photography, or watching any sci-fi movie. 😉
-        </p>
-        <p>
-          You can find me on Twitter, LinkedIn, or on Quora. Feel Free to
-          Connect. 😇
-        </p>
-        <p>Don't forget to follow me on Github Too!</p>
-      </h3>
     </div>
   );
 };

@@ -1,5 +1,9 @@
-body {
+* {
   margin: 0;
+  padding: 0;
+}
+
+body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
@@ -48,6 +52,10 @@ h4 {
   font-size: 1.5rem;
 }
 
+p {
+  font-size: 1.1rem;
+}
+
 /* Navbar Component Styling Starts */
 
 .navbar {
@@ -55,6 +63,7 @@ h4 {
   flex-direction: row;
   justify-content: space-between;
   align-content: center;
+  /* background: #191a1d; */
   background: linear-gradient(90deg, #8e2de2 0%, rgba(74, 0, 224, 0.84) 98.64%),
     #ffffff;
   margin: 0;
@@ -82,59 +91,68 @@ h4 {
 
 /* Navbar Component Styling Ends */
 
-/* Welcome Component Styling Starts */
-
-.welcome {
-  background-image: linear-gradient(
-      rgba(0, 0, 0, 0.3),
-      rgba(0, 0, 0, 0.2),
-      rgba(0, 0, 0, 0.3)
-    ),
-    url("./images/BG_pc.jpeg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-.welcome-child {
-  flex: 1;
-  /* border: solid 2px red; */
-  justify-content: space-evenly;
-}
-
-.welcome-child.profile-img img {
-  border: 2px solid #555;
-  border-radius: 50%;
-  transform: scale(0.5);
-  margin: 0 auto;
-}
-
-.welcome-child.welcome-txt {
-  text-transform: uppercase;
-  font-weight: 600;
-}
-
-/* Welcome Component Styling Ends */
-
 /* About Component Styling Starts */
 
-.about.desc {
-  max-width: 800px;
-  margin: 0 auto;
-  /* font-size: calc(0.5vh + 1rem); */
+.section-about {
+  /* background: #191a1d; */
+  background: linear-gradient(90deg, #8e2de2 0%, rgba(74, 0, 224, 0.84) 98.64%),
+    #ffffff;
+  padding: 0;
+  margin: 0;
+  border: 1px solid white;
 }
 
-.section-about img.site-header {
-  /* border-top: 2px solid red; */
+.section-about .wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 70vh;
+}
+
+.section-about .about {
+  max-width: 600px;
+  line-height: 1.5rem;
+  color: rgb(253, 247, 186);
+  text-align: left;
+}
+
+.section-about .wrapper .about h1 {
+  font-size: 3.5rem;
+  color: #fff;
+  font-family: "Montserrat", "Poppins", sans-serif;
+  padding: 0.9rem 0;
+}
+
+.section-about .wrapper .about h2 {
+  font-size: 1.75rem;
+  color: #cad5ec;
+  line-height: 3rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.section-about .wrapper .about .btn {
+  /* background: #4b6cc1; */
+  background: white;
+  font-size: 1.5rem;
+  font-family: "Poppins", sans-serif;
+  color: rgba(99, 20, 177, 0.8);
+  border: none;
+  border: 1px solid black;
+  border-radius: 26px;
+  padding: 10px 20px;
+  margin: 1rem;
+}
+
+.section-about .avatar {
   width: 100%;
   height: auto;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  border-radius: 50%;
+  max-width: 300px;
+}
+
+.section-about .about,
+.section-about .avatar {
+  flex: 1;
 }
 
 /* About Component Styling Ends */
@@ -186,11 +204,56 @@ h4 {
   width: calc(1vh + 100px);
 }
 
+.section-edu {
+  text-align: center;
+}
+
+.edu-logo {
+  height: 170px;
+  width: auto;
+  border-radius: 80px;
+}
+
+.edu-holder {
+  display: flex;
+  flex-direction: row;
+  transition: left 0.5s;
+}
+
+.edu-holder div h3 {
+  color: #c5c6c7;
+}
+
+.edu-class {
+  flex: 1;
+  padding: 10px 0;
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.edu-class:hover,
+.edu-class:focus {
+  box-shadow: 0 64px 64px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 18px;
+  transform: scale(1.05);
+  transition: all 1s;
+  background-color: rgba(56, 62, 87, 0.3);
+}
+
 /* Education Component Styling Ends */
 
 /* Skills Component Styling Starts */
 
-.wrapper {
+.section-skills {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.section-skills .wrapper {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding-left: 2.5rem;
   display: flex;
   justify-content: space-between;
   /* width: 100%; */
@@ -200,6 +263,7 @@ h4 {
 .lang-holder,
 .tools-holder {
   flex: 1;
+  padding-left: 1.5rem;
   /* border: 2px solid red; */
 }
 
@@ -246,6 +310,10 @@ h4 {
 /* Courses Component Styling Starts */
 
 .section-courses {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.section-courses .wrapper {
   max-width: 900px;
   margin: 0 auto;
 }
@@ -288,6 +356,7 @@ h4 {
 }
 .section-feedback > .feedback-wrapper {
   max-width: 80vh;
+  padding-left: 10%;
 }
 
 .section-feedback label {
@@ -303,7 +372,11 @@ h4 {
 /* Footer Component Styling Starts */
 
 .footer {
-  padding-top: 0.5rem;
+  /* background: #191a1d; */
+  background: linear-gradient(90deg, #8e2de2 0%, rgba(74, 0, 224, 0.84) 98.64%),
+    #ffffff;
+  color: white;
+  padding-bottom: 1rem;
   font-family: Poppins, "Courier New", Courier, monospace;
   font-size: calc(1vh + 0.75rem);
 }
@@ -350,20 +423,37 @@ h4 {
     margin: 0 0.5rem;
   }
 
-  .education > .holder {
+  .section-about .wrapper {
     flex-direction: column;
   }
 
-  .edu-class-body {
-    flex-direction: row;
+  .edu-holder {
+    flex-direction: column;
   }
 
-  .edu-icon {
+  .edu-class {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 700px;
+  }
+
+  .edu-class-head {
     flex: 1;
   }
 
-  .edu-data {
+  .edu-class-body {
     flex: 3;
+    top: 80%;
+    bottom: 0;
+  }
+
+  .night .edu-class-body {
+    border-left: 4px solid #4b6cc1;
+  }
+
+  .edu-class-body a {
+    display: none;
   }
 
   .holder-child {

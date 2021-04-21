@@ -2,6 +2,7 @@ const Feedback = () => {
   return (
     <div className="section-feedback p-5" id="about">
       <h1 className="feedback heading">Feedback</h1>
+      <hr />
       <div className="feedback-wrapper">
         <form action="/feedback" method="post">
           <div className="feedback-element feedback-head">

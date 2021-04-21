@@ -3,6 +3,11 @@ import React from "react";
 function Footer(props) {
   return (
     <div className="footer footer-dark text-center" id="contact">
+      <img
+        className="site-footer w-100"
+        src="/assets/illustrations/curve-bottom-white.svg"
+        alt="footer"
+      />
       <h4>Designed & Developed by Gaurav Kumar</h4>
       <div className="icons px-5">
         <a
@@ -50,11 +55,6 @@ function Footer(props) {
           />
         </a>
       </div>
-      <img
-        className="site-footer"
-        src="/assets/images/footer.svg"
-        alt="footer"
-      />
     </div>
   );
 }

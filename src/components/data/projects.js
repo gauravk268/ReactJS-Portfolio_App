@@ -44,7 +44,7 @@ const projects = [
   },
   {
     title: "16x16 LED Matrix",
-    image: "/assets/images/project/default.jpg",
+    image: "/assets/images/project/led_matrix.jpg",
     description:
       "A 16x 16 (16 rows and 16 columns) LED Matrix controlled by Arduino UNO and 4x IC74hc595 shift registers. In this project we are using the LED Matrix as a monitor to display the games that the user will play using the joystick mounted on the project board.",
     githubLink: "https://github.com/gauravk268/LED_Matrix-16x16",

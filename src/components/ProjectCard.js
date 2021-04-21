@@ -2,7 +2,7 @@ import React from "react";
 
 function ProjectCard(props) {
   return (
-    <div className="project-card col-lg-4 col-md-6 col-12 mb-5 d-flex">
+    <div className="project-card col-lg-4 col-md-6 col-sm-6 col-xs-6 mb-5 d-flex">
       <div className="card flex-fill">
         <img
           className="card-img-top"

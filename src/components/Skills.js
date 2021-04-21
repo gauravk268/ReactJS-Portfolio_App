@@ -6,6 +6,7 @@ function Skills(props) {
       <div className="wrapper">
         <div className="skills-holder">
           <h1 className="skills heading">Skills</h1>
+          <hr />
           <ul className="list">
             <h3>
               <li>Machine Learning</li>
@@ -18,6 +19,7 @@ function Skills(props) {
 
         <div className="lang-holder">
           <h1 className="lang heading">Languages</h1>
+          <hr />
           <ul className="list">
             <h3>
               <li>C/C++</li>
@@ -31,6 +33,7 @@ function Skills(props) {
 
         <div className="tools-holder">
           <h1 className="tools heading">Tools</h1>
+          <hr />
           <ul className="list">
             <h3>
               <li>Bootstrap</li>

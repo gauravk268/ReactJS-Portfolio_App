@@ -6,6 +6,7 @@ function Projects(props) {
   return (
     <div className="section-project" id="projects">
       <h1 className="heading">Projects</h1>
+      <hr />
       <div className="row">
         {projects.map((project) => (
           <ProjectCard project={project} />
