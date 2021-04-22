@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { Navbar, Homepage, Feedback, Footer, Error404 } from "./components";
+import { Navbar, Homepage, Feedback, Footer } from "./components";
 
 function App() {
   return (
@@ -9,8 +9,8 @@ function App() {
         <Navbar />
         <Switch>
           <Route path="/" exact component={() => <Homepage />} />
-          <Route path="/contact" component={() => <Feedback />} />
-          <Route path="*" component={() => <Error404 />} />
+          <Route path="/contact" exact component={() => <Feedback />} />
+          <Route path="*" component={() => <Homepage />} />
         </Switch>
         <Footer />
       </div>

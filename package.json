@@ -2,6 +2,8 @@
   "name": "portfolio-app",
   "version": "0.1.0",
   "private": true,
+  "author": "Gaurav Kumar",
+  "license": "MIT",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",
