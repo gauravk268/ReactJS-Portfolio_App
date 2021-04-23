@@ -9,7 +9,6 @@ body {
     "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  position: absolute;
 }
 
 code {
@@ -95,6 +94,8 @@ p {
   bottom: 1rem;
   border-radius: 45%;
   z-index: 20;
+  color: white;
+  font-weight: 900;
 }
 
 /* Navbar Component Styling Ends */
@@ -410,7 +411,6 @@ p {
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-  /* border: 2px solid red; */
 }
 
 .footer-icon img {
