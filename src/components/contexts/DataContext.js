@@ -21,7 +21,12 @@ export function DataProvider({ children }) {
           // console.log(data);
           setData(data);
         })
-        .catch((error) => console.log("Data Error: ", error));
+        .catch((error) => {
+          console.log("Data Error: ", error);
+          const localData = require("../data/data.json");
+          // console.log("local data: ", localData);
+          setData(localData);
+        });
     };
 
     const getData = () => {
@@ -31,7 +36,12 @@ export function DataProvider({ children }) {
           // console.log(data);
           setProjects(data);
         })
-        .catch((error) => console.log("Projects Error: ", error));
+        .catch((error) => {
+          console.log("Project Error: ", error);
+          const localProject = require("../data/projects.json");
+          // console.log("local data: ", localData);
+          setData(localProject);
+        });
     };
 
     getProjects();
