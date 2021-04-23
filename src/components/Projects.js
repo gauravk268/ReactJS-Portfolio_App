@@ -4,7 +4,7 @@ import ProjectCard from "./ProjectCard";
 // import projects from "./data/projects";
 
 function Projects(props) {
-  const { loading, projects } = useData();
+  const { projects } = useData();
 
   return (
     <div className="section-project" id="projects">

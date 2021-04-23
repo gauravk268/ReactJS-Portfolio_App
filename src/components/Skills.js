@@ -2,7 +2,7 @@ import React from "react";
 import { useData } from "./contexts";
 
 function Skills(props) {
-  const { loading, data } = useData();
+  const { data } = useData();
 
   return (
     <div className="section-skills p-5">
