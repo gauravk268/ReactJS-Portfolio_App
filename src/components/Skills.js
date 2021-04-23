@@ -12,15 +12,9 @@ function Skills(props) {
           <hr />
           <ul className="list">
             <h3>
-              {data[0].skills.map((skill) => {
-                return <li>{skill}</li>;
+              {data[0].skills.map((index, skill) => {
+                return <li key={index}>{skill}</li>;
               })}
-              {/* <li>Data Structure & Operating Systems</li>
-              <li>Web-Development</li>
-              <li>Operating System</li>
-              <li>DBMS</li>
-              <li>Computer Networks</li>
-              <li>Machine Learning</li> */}
             </h3>
           </ul>
         </div>
@@ -30,13 +24,9 @@ function Skills(props) {
           <hr />
           <ul className="list">
             <h3>
-              {data[0].languages.map((language) => {
-                return <li>{language}</li>;
+              {data[0].languages.map((index, language) => {
+                return <li key={index}>{language}</li>;
               })}
-              {/* <li>C/C++</li>
-              <li>Python3</li>
-              <li>HTML, CSS</li>
-              <li>JavaScript</li> */}
             </h3>
           </ul>
         </div>
@@ -46,15 +36,9 @@ function Skills(props) {
           <hr />
           <ul className="list">
             <h3>
-              {data[0].tools.map((tools) => {
-                return <li>{tools}</li>;
+              {data[0].tools.map((index, tools) => {
+                return <li key={index}>{tools}</li>;
               })}
-              {/* <li>ReactJS</li>
-              <li>NodeJS</li>
-              <li>MongoDB</li>
-              <li>Firebase</li>
-              <li>GitHub</li>
-              <li>Bootstrap</li> */}
             </h3>
           </ul>
         </div>
