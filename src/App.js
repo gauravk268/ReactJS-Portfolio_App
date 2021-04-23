@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { DataProvider } from "./components/contexts";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Navbar, Homepage, Feedback, Footer } from "./components";

@@ -1,7 +1,6 @@
 import React from "react";
 import { useData } from "./contexts";
 import ProjectCard from "./ProjectCard";
-// import projects from "./data/projects";
 
 function Projects(props) {
   const { projects } = useData();

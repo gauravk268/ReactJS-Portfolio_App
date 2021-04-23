@@ -9,7 +9,7 @@ function Achievements(props) {
       <hr />
       <ul>
         <h3>
-          {data[0].achievements.map((index, achiev) => {
+          {data[0].achievements.map((achiev, index) => {
             return (
               <li key={index} className="achiev detail">
                 {achiev}

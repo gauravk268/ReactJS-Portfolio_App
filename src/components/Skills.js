@@ -12,7 +12,7 @@ function Skills(props) {
           <hr />
           <ul className="list">
             <h3>
-              {data[0].skills.map((index, skill) => {
+              {data[0].skills.map((skill, index) => {
                 return <li key={index}>{skill}</li>;
               })}
             </h3>
@@ -24,7 +24,7 @@ function Skills(props) {
           <hr />
           <ul className="list">
             <h3>
-              {data[0].languages.map((index, language) => {
+              {data[0].languages.map((language, index) => {
                 return <li key={index}>{language}</li>;
               })}
             </h3>
@@ -36,7 +36,7 @@ function Skills(props) {
           <hr />
           <ul className="list">
             <h3>
-              {data[0].tools.map((index, tools) => {
+              {data[0].tools.map((tools, index) => {
                 return <li key={index}>{tools}</li>;
               })}
             </h3>
