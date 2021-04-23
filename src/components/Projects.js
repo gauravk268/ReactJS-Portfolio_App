@@ -1,8 +1,11 @@
 import React from "react";
+import { useData } from "./contexts";
 import ProjectCard from "./ProjectCard";
-import projects from "./data/projects";
+// import projects from "./data/projects";
 
 function Projects(props) {
+  const { loading, projects } = useData();
+
   return (
     <div className="section-project" id="projects">
       <h1 className="heading">Projects</h1>

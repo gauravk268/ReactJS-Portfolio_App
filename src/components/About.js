@@ -1,13 +1,14 @@
+import React from "react";
+import { useData } from "./contexts";
+
 const About = () => {
+  const { loading, data } = useData();
   return (
     <div className="section-about text-center" id="about">
       <div className="wrapper">
         <div className="about desc p-5">
           <h1 className="heading h1">Hey, I'm Gaurav</h1>
-          <h2>
-            A web developer from MNNIT Allahabad in the India. I love to create
-            websites and always eager to learn new things.
-          </h2>
+          <h2>{!loading && data[0].aboutMsg}</h2>
           <a className="btn btn-info" href="#projects">
             My Projects
           </a>

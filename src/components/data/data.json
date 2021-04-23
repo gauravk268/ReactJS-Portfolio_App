@@ -1,0 +1,28 @@
+[
+  {
+    "aboutMsg": "A web developer from MNNIT Allahabad in the India. I love to create websites and always eager to learn new things.",
+    "skills": [
+      "Data Structure",
+      "Web-Development",
+      "Operating System",
+      "DBMS",
+      "Computer Network",
+      "Machine Learning"
+    ],
+    "languages": ["C/C++", "Python3", "HTML, CSS", "JavaScript"],
+    "tools": [
+      "ReactJS",
+      "NodeJS",
+      "MongoDB",
+      "Firebase",
+      "Github",
+      "Bootstrap"
+    ],
+    "achievements": [
+      "Awarded Best Domain Name and got appreciated for minimalistic approach for project in Hack36 4.0 2021 (MNNIT Allahabad).",
+      "First Runner Up in Embedded System Design Event of Avishkar-2019 (MNNIT Allahabad).",
+      "Participated in the IARC challenge in Techkriti 2019 (IIT Kanpur).",
+      "School Captain at JNV Sonbhadra (07/2016-04/2017)"
+    ]
+  }
+]
