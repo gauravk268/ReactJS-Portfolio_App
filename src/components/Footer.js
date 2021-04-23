@@ -16,7 +16,7 @@ function Footer(props) {
           target="_blank"
           rel="noreferrer"
         >
-          <img alt="linkdedin logo" src="/assets/icons/linkedin1.svg" />
+          <img alt="linkdedin logo" src="/assets/icons/linkedin.svg" />
         </a>
 
         <a
@@ -25,7 +25,7 @@ function Footer(props) {
           target="_blank"
           rel="noreferrer"
         >
-          <img alt="github logo" src="/assets/icons/github1.svg" />
+          <img alt="github logo" src="/assets/icons/github.svg" />
         </a>
 
         <a
@@ -34,15 +34,25 @@ function Footer(props) {
           target="_blank"
           rel="noreferrer"
         >
-          <img alt="twitter logo" src="/assets/icons/twitter1.svg" />
+          <img alt="twitter logo" src="/assets/icons/twitter.svg" />
         </a>
+
+        <a
+          className="footer-icon youtube"
+          href="https://www.youtube.com/channel/UCIYgr_6qLgtq-qc02-pUYmw"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img alt="youtube logo" src="/assets/icons/youtube.svg" />
+        </a>
+
         <a
           className="footer-icon quora"
           href="https://quora.com/profile/Gaurav-1297"
           target="_blank"
           rel="noreferrer"
         >
-          <img alt="quora logo" src="/assets/icons/quora1.svg" />
+          <img alt="quora logo" src="/assets/icons/quora.svg" />
         </a>
       </div>
     </div>
