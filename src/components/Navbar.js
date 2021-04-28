@@ -1,8 +1,9 @@
-import {Link, animateScroll as scroll}  from "react-scroll";
+import { Link, animateScroll as scroll } from "react-scroll";
+import { useLocation } from 'react-router-dom';
 
 const Navbar = () => {
   const scrollToTop = () => {
-    scroll.scrollToTop({smooth:"easeInOutCubic",});
+    scroll.scrollToTop({ smooth: "easeInOutCubic", });
   };
 
   return (
@@ -14,25 +15,25 @@ const Navbar = () => {
       </div>
       <div className="navbar-child navbar-right">
 
-        <Link className="navbar-right-child navbar-item" activeClass="active" to="projects" smooth={true} duration={700}>
-          Projects
-        </Link>
 
-        <Link className="navbar-right-child navbar-item" activeClass="active" to="achiev" smooth={true} duration={700}>
+        {(useLocation().pathname === "/") ? <Link className="navbar-right-child navbar-item" activeClass="active" to="projects" smooth={true} duration={700}>
+          Projects</Link> : <a className="navbar-right-child navbar-item"  href="/#projects">Projects</a>}
+
+        {(useLocation().pathname === "/") ? <Link className="navbar-right-child navbar-item" activeClass="active" to="achiev" smooth={true} duration={700}>
           Achievements
-        </Link>
+        </Link> : <a className="navbar-right-child navbar-item" href="/#achiev">Achievements</a>}
 
         <div className="navbar-right-child navbar-item">
           <a href="/contact">Contact</a>
-        </div> 
+        </div>
 
       </div>
 
-      <button onClick={scrollToTop} className="btn top btn-primary" > 
+      <button onClick={scrollToTop} className="btn top btn-primary" >
         &#8682;
       </button>
 
-      
+
     </div>
   );
 };
