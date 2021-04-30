@@ -1,6 +1,19 @@
 import { useLocation } from "react-router-dom";
 
 const Navbar = () => {
+  const IsAtHome = () => {
+    if (useLocation().pathname === "/")
+      return (
+        <div>
+          <a className="navbar-right-child navbar-item" href="#projects">
+            Projects
+          </a>
+          <a className="navbar-right-child navbar-item" href="#achiev">
+            Achievements
+          </a>
+        </div>
+      );
+  };
   return (
     <div className="navbar">
       <div className="navbar-child navbar-left">
@@ -9,24 +22,7 @@ const Navbar = () => {
         </div>
       </div>
       <div className="navbar-child navbar-right">
-        {useLocation().pathname === "/" ? (
-          <div>
-            <a className="navbar-right-child navbar-item" href="#projects">
-              Projects
-            </a>
-          </div>
-        ) : (
-          <a className="navbar-right-child navbar-item" href="/#projects"></a>
-        )}
-
-        {useLocation().pathname === "/" ? (
-          <a className="navbar-right-child navbar-item" href="#achiev">
-            Achievements
-          </a>
-        ) : (
-          <a className="navbar-right-child navbar-item" href="/#achiev"></a>
-        )}
-
+        {IsAtHome()}
         <div className="navbar-right-child navbar-item">
           <a href="/contact">Contact</a>
         </div>
