@@ -37,6 +37,9 @@
     <script src="./bootstrap/js/jquery-3.5.1.min.js"></script>
     <script src="./bootstrap/js/bootstrap.min.js" async></script>
 
+    <!-- Custom CSS -->
+    <link href="./index.css" rel="stylesheet" />
+
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -63,6 +66,85 @@
     <title>Gaurav Kumar</title>
   </head>
   <body>
+    <!-- Preloading Screen Starts -->
+
+    <div class="loader-wrapper">
+      <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+
+    <style>
+      .loader-wrapper {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #242f3f;
+        display: flex;
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+      }
+      .loader {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        position: relative;
+        border: 4px solid #edc7b7;
+        animation: loader 2s infinite ease;
+      }
+      .loader-inner {
+        vertical-align: top;
+        display: inline-block;
+        width: 100%;
+        background-color: turquoise;
+        animation: loader-inner 2s infinite ease-in;
+      }
+      @keyframes loader {
+        0% {
+          transform: rotate(0deg);
+        }
+        25% {
+          transform: rotate(180deg);
+        }
+        50% {
+          transform: rotate(180deg);
+        }
+        75% {
+          transform: rotate(360deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      @keyframes loader-inner {
+        0% {
+          height: 0%;
+        }
+        25% {
+          height: 0%;
+        }
+        50% {
+          height: 100%;
+        }
+        75% {
+          height: 100%;
+        }
+        100% {
+          height: 0%;
+        }
+      }
+    </style>
+
+    <script>
+      $(window).on("load", function () {
+        $(".loader-wrapper").fadeOut("slow");
+      });
+    </script>
+
+    <!-- Preloading Screen Ends -->
+
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
   </body>

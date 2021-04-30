@@ -1,5 +1,5 @@
-:root{
-  --base-color-btn:  rgba(99, 20, 177, 0.8); 
+:root {
+  --base-color-btn: rgba(99, 20, 177, 0.8);
 }
 
 * {
@@ -66,7 +66,6 @@ p {
   flex-direction: row;
   justify-content: space-between;
   align-content: center;
-  /* background: #191a1d; */
   background: linear-gradient(90deg, #8e2de2 0%, rgba(74, 0, 224, 0.84) 98.64%),
     #ffffff;
   margin: 0;
@@ -76,24 +75,24 @@ p {
   padding-right: 15vw;
 }
 
-.navbar-left{
+.navbar-left {
   float: left;
   left: 1.5rem;
   position: absolute;
 }
 
-.navbar-brand a{
+.navbar-brand a {
   color: white;
   font-weight: 900;
   font-family: "Montserrat", "Poppins", sans-serif;
   font-size: 1.5rem;
 }
 
-.navbar-item{
+.navbar-item {
   color: white;
   font-weight: bold;
   font-family: "Montserrat", "Poppins", sans-serif;
-  font-size: 1.20rem;
+  font-size: 1.2rem;
 }
 
 .navbar-child.navbar-right {
@@ -495,11 +494,11 @@ p {
     padding-right: 5vw;
   }
 
-  .navbar-brand a{
+  .navbar-brand a {
     font-size: 1.25rem;
   }
-  
-  .navbar-item{
+
+  .navbar-item {
     font-size: 1rem;
   }
 
