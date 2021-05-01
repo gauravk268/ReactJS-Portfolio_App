@@ -21,5 +21,21 @@
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#7729E3",
-  "background_color": "#404040"
+  "background_color": "#404040",
+  "shortcuts": [
+    {
+      "name": "Projects",
+      "short_name": "Project",
+      "description": "See projects made by Gaurav.",
+      "url": "/#projects",
+      "icons": [{ "src": "logo192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Contact",
+      "short_name": "Contact",
+      "description": "Send a message to Gaurav.",
+      "url": "/contact",
+      "icons": [{ "src": "logo192.png", "sizes": "192x192" }]
+    }
+  ]
 }
