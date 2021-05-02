@@ -2,7 +2,12 @@ import React, { useState } from "react";
 import db from "./Firebase/config";
 
 const Feedback = () => {
-  const [feedTemp, setFeedTemp] = useState({ name: "", email: "", msg: "" });
+  const [feedTemp, setFeedTemp] = useState({
+    name: "",
+    email: "",
+    msg: "",
+    timestamp: Date().toString(),
+  });
   const [saving, setSaving] = useState(false);
   const [sent, setSent] = useState(false);
   const [error, setError] = useState();
@@ -10,11 +15,12 @@ const Feedback = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (feedTemp.name === "" || feedTemp.email === "" || feedTemp.msg === "")
+    if (feedTemp.name === "" || feedTemp.email === "" || feedTemp.msg === "") {
+      setFeedTemp({ name: "", email: "", msg: "", timestamp: "" });
       return;
+    }
 
     setSaving(true);
-    setFeedTemp({ ...feedTemp, timestamp: Date() });
 
     db.collection("feedback")
       .add(feedTemp)
@@ -29,7 +35,7 @@ const Feedback = () => {
         // console.log(error.message);
       });
 
-    setFeedTemp({ name: "", email: "", msg: "" });
+    setFeedTemp({ name: "", email: "", msg: "", timestamp: "" });
     setSaving(false);
   };
 

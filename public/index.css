@@ -382,7 +382,7 @@ p {
 }
 
 .section-feedback > .feedback-wrapper {
-  max-width: 80vh;
+  max-width: 700px;
   padding-left: 10%;
 }
 
@@ -435,6 +435,17 @@ p {
 }
 
 /* Footer Component Styling Ends */
+
+/* Msg Component Styling Ends */
+
+.section-msgcard {
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  border-radius: 1rem;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+/* Msg Component Styling Starts */
 
 /* 404 Component Styling Starts */
 
