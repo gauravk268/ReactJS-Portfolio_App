@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import db from "./Firebase/config";
+import MsgCard from "./MsgCard";
 
 const Feedback = () => {
   const [feedTemp, setFeedTemp] = useState({ name: "", email: "", msg: "" });
@@ -21,12 +22,12 @@ const Feedback = () => {
       .then((documentReference) => {
         setSent(true);
         setError(false);
-        console.log("document reference ID", documentReference.id);
+        // console.log("document reference ID", documentReference.id);
       })
       .catch((error) => {
         setError(true);
         setSent(true);
-        console.log(error.message);
+        // console.log(error.message);
       });
 
     setFeedTemp({ name: "", email: "", msg: "" });
