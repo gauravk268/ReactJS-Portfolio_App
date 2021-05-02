@@ -68,47 +68,37 @@ p {
 .navbar {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-content: center;
   background: linear-gradient(90deg, #8e2de2 0%, rgba(74, 0, 224, 0.84) 98.64%),
     #ffffff;
-  margin: 0;
-  height: 7vh;
-
-  padding-left: 15vw;
-  padding-right: 15vw;
 }
 
 .navbar-left {
+  flex: 1;
   float: left;
-  left: 1.5rem;
-  position: absolute;
+  text-align: center;
+}
+
+.navbar-right {
+  flex: 2;
+  float: right;
+  text-align: center;
 }
 
 .navbar-brand a {
   color: white;
   font-weight: 900;
   font-family: "Montserrat", "Poppins", sans-serif;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .navbar-item {
   color: white;
   font-weight: bold;
   font-family: "Montserrat", "Poppins", sans-serif;
-  font-size: 1.2rem;
-}
-
-.navbar-child.navbar-right {
-  display: flex;
-  flex-direction: row;
-  float: right;
-  right: 1.25rem;
-  position: absolute;
-}
-
-.navbar-right-child.navbar-item {
-  margin: 0 1.5rem;
+  font-size: 1.5rem;
+  padding: 0 2rem;
 }
 
 .navbar .btn.top {
@@ -493,11 +483,6 @@ p {
     font-size: 0.9rem;
   }
 
-  .navbar {
-    padding-left: 5vw;
-    padding-right: 5vw;
-  }
-
   .navbar-brand a {
     font-size: 1.25rem;
   }
@@ -506,8 +491,8 @@ p {
     font-size: 1rem;
   }
 
-  .navbar-right-child.navbar-item {
-    margin: 0 0.5rem;
+  .navbar-item {
+    padding: 0 0.5rem;
   }
 
   .section-about .wrapper {

@@ -5,11 +5,11 @@ const Navbar = () => {
     if (useLocation().pathname === "/")
       return (
         <div>
-          <a className="navbar-right-child navbar-item" href="#projects">
-            Projects
-          </a>
           <a className="navbar-right-child navbar-item" href="#achiev">
             Achievements
+          </a>
+          <a className="navbar-right-child navbar-item" href="/contact">
+            Contact
           </a>
         </div>
       );
@@ -21,12 +21,7 @@ const Navbar = () => {
           <a href="/">Gaurav</a>
         </div>
       </div>
-      <div className="navbar-child navbar-right">
-        {IsAtHome()}
-        <div className="navbar-right-child navbar-item">
-          <a href="/contact">Contact</a>
-        </div>
-      </div>
+      <div className="navbar-child navbar-right">{IsAtHome()}</div>
 
       <a className="btn top btn-primary" href="#brand">
         &#8682;
