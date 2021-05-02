@@ -14,7 +14,7 @@ const Feedback = () => {
       return;
 
     setSaving(true);
-    console.log(feedTemp);
+    // console.log(feedTemp);
 
     db.collection("feedback")
       .add(feedTemp)
@@ -39,7 +39,9 @@ const Feedback = () => {
       <div className="status">
         {sent &&
           (error === false ? (
-            <small className="alert-success">Message saved successfully.</small>
+            <small className="alert-success">
+              Message saved successfully. Go to <a href="/">Home</a>{" "}
+            </small>
           ) : (
             <small className="alert-danger">
               Cannot save message.
