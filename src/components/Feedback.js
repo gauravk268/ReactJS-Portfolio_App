@@ -16,7 +16,7 @@ const Feedback = () => {
     e.preventDefault();
 
     if (feedTemp.name === "" || feedTemp.email === "" || feedTemp.msg === "") {
-      setFeedTemp({ name: "", email: "", msg: "", timestamp: "" });
+      setError(true);
       return;
     }
 
@@ -43,8 +43,8 @@ const Feedback = () => {
     <div className="section-feedback p-5" id="about">
       <h1 className="feedback heading">Get in touch</h1>
       <div className="status">
-        {sent &&
-          (error === false ? (
+        {sent ? (
+          error === false ? (
             <div className="alert alert-success">
               Message saved successfully. Go to <a href="/">Home</a>{" "}
             </div>
@@ -58,7 +58,14 @@ const Feedback = () => {
               or try again later.
               <br /> Sorry for the inconvenience.
             </div>
-          ))}
+          )
+        ) : (
+          error === true && (
+            <div className="alert alert-warning">
+              Fill all fields before sending message.
+            </div>
+          )
+        )}
       </div>
       <hr />
       <div className="feedback-wrapper">
