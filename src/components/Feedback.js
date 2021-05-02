@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import db from "./Firebase/config";
-import MsgCard from "./MsgCard";
 
 const Feedback = () => {
   const [feedTemp, setFeedTemp] = useState({ name: "", email: "", msg: "" });
@@ -15,7 +14,7 @@ const Feedback = () => {
       return;
 
     setSaving(true);
-    // console.log(feedTemp);
+    setFeedTemp({ ...feedTemp, timestamp: Date() });
 
     db.collection("feedback")
       .add(feedTemp)
@@ -40,11 +39,11 @@ const Feedback = () => {
       <div className="status">
         {sent &&
           (error === false ? (
-            <small className="alert-success">
+            <div className="alert alert-success">
               Message saved successfully. Go to <a href="/">Home</a>{" "}
-            </small>
+            </div>
           ) : (
-            <small className="alert-danger">
+            <div className="alert alert-danger">
               Cannot save message.
               <br /> Mail on{" "}
               <a href="mailto:gauravk26800@gmail.com">
@@ -52,7 +51,7 @@ const Feedback = () => {
               </a>{" "}
               or try again later.
               <br /> Sorry for the inconvenience.
-            </small>
+            </div>
           ))}
       </div>
       <hr />
