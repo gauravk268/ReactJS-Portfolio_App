@@ -45,7 +45,7 @@ function ReadMsg(props) {
               <h3>Secret Key</h3>
             </label>
             <input
-              type="text"
+              type="password"
               className="form-control"
               name="name"
               placeholder="Enter Secret Key to see Messages"
@@ -88,6 +88,10 @@ function ReadMsg(props) {
               </div>
             )}
       </div>
+
+      {validate && msgs.length === 0 && (
+        <h2 className="alert alert-info">No messages until now.</h2>
+      )}
     </div>
   );
 }
