@@ -315,7 +315,6 @@ p {
 
 .project-card .btn.btn-info {
   color: black;
-  margin-right: 1rem;
 }
 
 .section-project .project-card .btn {
@@ -373,6 +372,7 @@ p {
   /* border: 2px solid red; */
   max-width: 900px;
   margin: 0 auto;
+  min-height: 75vh;
 }
 
 .section-feedback button {
@@ -413,6 +413,8 @@ p {
   padding-bottom: 1rem;
   font-family: Poppins, "Courier New", Courier, monospace;
   font-size: calc(1vh + 0.75rem);
+  bottom: 0;
+  position: absoltue;
 }
 
 .footer .curve-site-footer {
@@ -437,6 +439,10 @@ p {
 /* Footer Component Styling Ends */
 
 /* Msg Component Styling Ends */
+
+.section-readmsg {
+  min-height: 70vh;
+}
 
 .section-msgcard {
   border: 2px solid rgba(0, 0, 0, 0.5);

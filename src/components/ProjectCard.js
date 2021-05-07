@@ -16,14 +16,19 @@ function ProjectCard(props) {
           <p className="project-card card-text">{props.project.description}</p>
         </div>
         <div className="card-footer">
+          {props.project.seeMoreLink && (
+            <a className="btn btn-warning m-1" href={props.project.seeMoreLink}>
+              See More
+            </a>
+          )}
           {props.project.demoLink && (
-            <a className="btn btn-info" href={props.project.demoLink}>
+            <a className="btn btn-info m-1" href={props.project.demoLink}>
               Live
             </a>
           )}
           {props.project.githubLink && (
-            <a className="btn btn-primary" href={props.project.githubLink}>
-              Github Repo
+            <a className="btn btn-primary m-1" href={props.project.githubLink}>
+              Github
             </a>
           )}
         </div>
