@@ -1,6 +1,6 @@
 import React from "react";
-import Particles from "react-particles-js";
-import particlesConfig from "./config/particlesConfig";
+// import Particles from "react-particles-js";
+// import particlesConfig from "./config/particlesConfig";
 import { useData } from "./contexts";
 
 const About = () => {
