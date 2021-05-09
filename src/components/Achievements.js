@@ -5,19 +5,21 @@ function Achievements(props) {
   const { data } = useData();
   return (
     <div className="section-achiev p-5" id="achiev">
-      <h1 className="heading">Achievements</h1>
-      <hr />
-      <ul>
-        <h3>
-          {data[0].achievements.map((achiev, index) => {
-            return (
-              <li key={index} className="achiev detail">
-                {achiev}
-              </li>
-            );
-          })}
-        </h3>
-      </ul>
+      <div className="wrapper container">
+        <h1 className="display-4">Achievements</h1>
+        <hr />
+        <ul>
+          <h3>
+            {data.achievements.map((achiev, index) => {
+              return (
+                <li key={index} className="display-8 achiev detail">
+                  {achiev}
+                </li>
+              );
+            })}
+          </h3>
+        </ul>
+      </div>
     </div>
   );
 }

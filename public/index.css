@@ -25,11 +25,8 @@ code {
     monospace;
 }
 
-.heading {
-  font-family: "Montserrat", "Poppins", sans-serif;
-  font-weight: 900;
-  font-size: calc(3vw + 1rem);
-  color: rgba(0, 0, 0, 1);
+.display-4 {
+  font-weight: 800;
 }
 
 .App {
@@ -42,26 +39,6 @@ a:hover,
 a:focus {
   text-decoration: none;
   color: white;
-}
-
-h1 {
-  font-size: 2.1rem;
-}
-
-h2 {
-  font-size: 1.8rem;
-}
-
-h3 {
-  font-size: 1.5rem;
-}
-
-h4 {
-  font-size: 1.2rem;
-}
-
-p {
-  font-size: 1rem;
 }
 
 /* Navbar Component Styling Starts */
@@ -91,14 +68,12 @@ p {
   color: white;
   font-weight: 900;
   font-family: "Montserrat", "Poppins", sans-serif;
-  font-size: 2rem;
 }
 
 .navbar-item {
   color: white;
   font-weight: bold;
   font-family: "Montserrat", "Poppins", sans-serif;
-  font-size: 1.5rem;
   padding: 0 2rem;
 }
 
@@ -180,79 +155,21 @@ p {
 
 /* About Component Styling Ends */
 
+/* Particle-js Component Styling Starts */
+
+/* Particle-js Component Styling Ends */
+
 /* Education Component Styling Starts */
 
-.section-education {
-  max-width: 1024px;
-  margin: 0 auto;
-  padding-left: 2.5rem;
-}
-
-.section-education img {
-  width: 100%;
+.section-education .card a img {
+  width: 10rem;
   height: auto;
-  /* border: 2px solid red; */
 }
 
-.section-education > .holder {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-.section-education .holder-child {
-  flex: 1;
-  text-align: center;
-  border: 2px solid red;
-  margin-top: 1rem;
-}
-
-.section-education .holder .edu-class .body {
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-}
-
-.section-education .holder .edu-class .head {
-  text-align: center;
-}
-
-.edu-icon {
-  flex: 2;
-}
-
-.edu-data {
-  flex: 1;
-}
-
-.section-education .holder .edu-class .body > .edu-icon > a > img {
-  width: calc(1vh + 100px);
-}
-
-.section-edu {
-  text-align: center;
-}
-
-.edu-logo {
-  height: 170px;
-  width: auto;
-  border-radius: 80px;
-}
-
-.edu-holder {
-  display: flex;
-  flex-direction: row;
-}
-
-.edu-class {
-  flex: 1;
-  padding: 10px 0;
-  max-width: 400px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
+@media only screen and (max-width: 768px) {
+  .section-education .card a img {
+    display: none;
+  }
 }
 
 /* Education Component Styling Ends */
@@ -263,23 +180,6 @@ p {
   background: rgba(0, 0, 0, 0.1);
 }
 
-.section-skills .wrapper {
-  max-width: 1024px;
-  margin: 0 auto;
-  padding-left: 2.5rem;
-  display: flex;
-  justify-content: space-between;
-  /* width: 100%; */
-}
-
-.skills-holder,
-.lang-holder,
-.tools-holder {
-  flex: 1;
-  padding-left: 1.5rem;
-  /* border: 2px solid red; */
-}
-
 .section-skills .wrapper .list li {
   color: rgba(0, 0, 0, 0.8);
 }
@@ -287,16 +187,6 @@ p {
 /* Skills Component Styling Ends */
 
 /* Project Component Styling Starts */
-
-.section-project {
-  max-width: 1024px;
-  margin: 0 auto;
-  padding-left: 2.5rem;
-}
-
-.section-project .row {
-  width: 100%;
-}
 
 .project-card.title {
   color: rgba(0, 0, 0, 0.7);
@@ -332,11 +222,6 @@ p {
   background: rgba(0, 0, 0, 0.1);
 }
 
-.section-courses .wrapper {
-  max-width: 900px;
-  margin: 0 auto;
-}
-
 .section-courses .wrapper li {
   line-height: 2rem;
 }
@@ -353,11 +238,6 @@ p {
 
 /* Achievements Component Styling Starts */
 
-.section-achiev {
-  max-width: 900px;
-  margin: 0 auto;
-}
-
 .section-achiev li {
   line-height: 2.2rem;
 }
@@ -370,17 +250,15 @@ p {
 
 /* Feedback Component Styling Starts */
 
-.section-feedback {
-  /* border: 2px solid red; */
-  max-width: 900px;
-  margin: 0 auto;
-  min-height: 75vh;
-}
-
 .section-feedback button {
   color: white;
   background: rgba(99, 20, 177, 0.8);
   border: none;
+}
+
+.section-feedback input,
+.section-feedback textarea {
+  max-width: 700px;
 }
 
 .section-feedback > .feedback-wrapper {
@@ -444,6 +322,9 @@ p {
 
 .section-readmsg {
   min-height: 70vh;
+}
+.section-readmsg input {
+  max-width: 700px;
 }
 
 .section-msgcard {

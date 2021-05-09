@@ -1,50 +1,83 @@
-[
-  {
-    "key": 1111,
-    "title": ".CBS [ Code-Brigade Services ]",
-    "image": "http://gauravk268.github.io/images/project/cbs.jpg",
-    "description": "A web-app to provide all services inside a restaurant with minimum contact i.e., using the user’s smartphone or tablet. Provides menu, ordering food, payment, feedback for the services, games/news only after logging in with unique QR on user’s table. ReactJS, NodeJS, MongoDB, PayPal (for Payment).",
-    "githubLink": "https://github.com/gauravk268/Hack36_CodeBrigade",
-    "demoLink": "https://code-brigade.co"
-  },
-  {
-    "key": 1112,
-    "title": "PORTFOLIO WEBSITE",
-    "image": "http://gauravk268.github.io/images/project/portfolio.png",
-    "description": "A website to show all my skills and qualifications along with projects. Features: Responsive design, Light and Dark mode, Preloading animation. HTML, CSS, JS, Bootstrap, NodeJS, MongoDB.",
-    "githubLink": "",
-    "demoLink": "https://gauravk.co"
-  },
-  {
-    "key": 1113,
-    "title": "Identify the Dance Form",
-    "image": "http://gauravk268.github.io/images/project/default.jpg",
-    "description": "Designed a CNN model that identifies the dance form of the person in the image and classifies them into various categories of Indian classical Dance Forms",
-    "githubLink": "https://github.com/gauravk268/Machine_Learning_Projects/tree/master/HackerEarth-Identify_the_Dance_Form",
-    "demoLink": ""
-  },
-  {
-    "key": 1114,
-    "title": "Sentiment Analysis on Mother's Day Tweet",
-    "image": "http://gauravk268.github.io/images/project/default.jpg",
-    "description": "Designed a NLP classifier using SGD Classifier that analyses the sentiments of a tweet posted during Mother’s Day and classifies them into positive, negative and neutral.",
-    "githubLink": "https://github.com/gauravk268/Machine_Learning_Projects/tree/master/HackerEarth-Mothers’_Day_with_Machine_Learning",
-    "demoLink": ""
-  },
-  {
-    "key": 1115,
-    "title": "Emotion Detection of Tom & Jerry",
-    "image": "http://gauravk268.github.io/images/project/default.jpg",
-    "description": "Designed a model that detects emotion of the toons i.e. Tom & Jerry Cartoon video, priority is given to Tom, then Jerry, then any other character in the video frame.",
-    "githubLink": "https://github.com/gauravk268/Machine_Learning_Projects/tree/master/HackerEarth-Emotion_Detection_Tom_Jerry_Cartoon",
-    "demoLink": ""
-  },
-  {
-    "key": 1116,
-    "title": "16x16 LED Matrix",
-    "image": "http://gauravk268.github.io/images/project/led_matrix.jpg",
-    "description": "A 16x 16 (16 rows and 16 columns) LED Matrix controlled by Arduino UNO and 4x IC74hc595 shift registers. In this project we are using the LED Matrix as a monitor to display the games that the user will play using the joystick mounted on the project board.",
-    "githubLink": "https://github.com/gauravk268/LED_Matrix-16x16",
-    "demoLink": ""
-  }
-]
+{
+  "aboutMsg": "A web developer from MNNIT Allahabad in the India. I love to create websites and always eager to learn new things.",
+  "skills": [
+    "Data Structure",
+    "Web-Development",
+    "Operating System",
+    "DBMS",
+    "Computer Network",
+    "Machine Learning",
+    "C/C++",
+    "Python3",
+    "HTML, CSS",
+    "JavaScript",
+    "ReactJS",
+    "NodeJS",
+    "MongoDB",
+    "Firebase",
+    "Github",
+    "Bootstrap"
+  ],
+  "achievements": [
+    "Awarded Best Domain Name and got appreciated for minimalistic approach for project in Hack36 4.0 2021 (MNNIT Allahabad).",
+    "First Runner Up in Embedded System Design Event of Avishkar-2019 (MNNIT Allahabad).",
+    "Participated in the IARC challenge in Techkriti 2019 (IIT Kanpur).",
+    "School Captain at JNV Sonbhadra (07/2016-04/2017)"
+  ],
+  "projects": [
+    {
+      "key": 1111,
+      "title": ".CBS [ Code-Brigade Services ]",
+      "image": "http://gauravk268.github.io/images/project/cbs.jpg",
+      "description": "A web-app to provide all services inside a restaurant with minimum contact i.e., using the user’s smartphone or tablet.",
+      "seeMoreLink": "https://gauravk268.github.io/Hack36_CodeBrigade",
+      "demoLink": "https://code-brigade.co",
+      "githubLink": "https://github.com/gauravk268/Hack36_CodeBrigade"
+    },
+    {
+      "key": 1112,
+      "title": "PORTFOLIO WEBSITE",
+      "image": "http://gauravk268.github.io/images/project/portfolio.png",
+      "description": "A website to show all my skills and qualifications along with projects. Features: PWA, Responsive design, Preloading animationm, Smooth Scroll. ReactJS, Bootstrap, Firebase, React-Router-Dom.",
+      "seeMoreLink": "https://gauravk268.github.io/React-Portfolio-App/",
+      "githubLink": "https://github.com/gauravk268/React-Portfolio-App",
+      "demoLink": "https://gauravk.co"
+    },
+    {
+      "key": 1113,
+      "title": "Identify the Dance Form",
+      "image": "http://gauravk268.github.io/images/project/default.jpg",
+      "description": "A CNN model that identifies the dance form of the person in the image and classifies them into various categories of Indian classical Dance Forms",
+      "seeMoreLink": "https://gauravk268.github.io/Machine_Learning_Projects/",
+      "githubLink": "https://github.com/gauravk268/Machine_Learning_Projects/tree/master/HackerEarth-Identify_the_Dance_Form",
+      "demoLink": ""
+    },
+    {
+      "key": 1114,
+      "title": "Sentiment Analysis on Mother's Day Tweet",
+      "image": "http://gauravk268.github.io/images/project/default.jpg",
+      "description": "A NLP classifier using SGD Classifier that analyses the sentiments of a tweet posted during Mother’s Day and classifies them into positive, negative and neutral.",
+      "seeMoreLink": "https://gauravk268.github.io/Machine_Learning_Projects/",
+      "githubLink": "https://github.com/gauravk268/Machine_Learning_Projects/tree/master/HackerEarth-Mothers’_Day_with_Machine_Learning",
+      "demoLink": ""
+    },
+    {
+      "key": 1115,
+      "title": "Emotion Detection of Tom & Jerry",
+      "image": "http://gauravk268.github.io/images/project/default.jpg",
+      "description": "A model that detects emotion of the toons i.e. Tom & Jerry Cartoon video, priority is given to Tom, then Jerry, then any other character in the video frame.",
+      "seeMoreLink": "https://gauravk268.github.io/Machine_Learning_Projects/",
+      "githubLink": "https://github.com/gauravk268/Machine_Learning_Projects/tree/master/HackerEarth-Emotion_Detection_Tom_Jerry_Cartoon",
+      "demoLink": ""
+    },
+    {
+      "key": 1116,
+      "title": "16x16 LED Matrix",
+      "image": "http://gauravk268.github.io/images/project/led_matrix.jpg",
+      "description": "A 16 x 16 (16 rows and 16 columns) LED Matrix controlled by Arduino UNO and 4x IC74hc595 shift registers, user can play games using the joystick mounted on the project board.",
+      "seeMoreLink": "https://gauravk268.github.io/LED_Matrix-16x16/",
+      "githubLink": "https://github.com/gauravk268/LED_Matrix-16x16",
+      "demoLink": ""
+    }
+  ]
+}

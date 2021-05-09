@@ -7,14 +7,14 @@ const About = () => {
   const { loading, data } = useData();
   return (
     <div className="section-about text-center">
-      <div style={{ position: "absolute" }}>
-        <Particles height="100vh" width="100vw" params={particlesConfig} />
-      </div>
+      {/* <div style={{ position: "absolute" }}>
+        <Particles height="100vh" width="100%" params={particlesConfig} />
+      </div> */}
 
       <div className="wrapper">
         <div className="about desc p-5">
           <h1 className="heading h1">Hey, I'm Gaurav</h1>
-          <h2>{!loading && data[0].aboutMsg}</h2>
+          <h2>{!loading && data.aboutMsg}</h2>
           <a className="btn btn-info" href="#projects">
             My Projects
           </a>

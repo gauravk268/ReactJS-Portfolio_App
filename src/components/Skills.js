@@ -6,41 +6,20 @@ function Skills(props) {
 
   return (
     <div className="section-skills p-5">
-      <div className="wrapper">
-        <div className="skills-holder">
-          <h1 className="skills heading">Skills</h1>
-          <hr />
-          <ul className="list">
-            <h3>
-              {data[0].skills.map((skill, index) => {
-                return <li key={index}>{skill}</li>;
-              })}
-            </h3>
-          </ul>
-        </div>
-
-        <div className="lang-holder">
-          <h1 className="lang heading">Languages</h1>
-          <hr />
-          <ul className="list">
-            <h3>
-              {data[0].languages.map((language, index) => {
-                return <li key={index}>{language}</li>;
-              })}
-            </h3>
-          </ul>
-        </div>
-
-        <div className="tools-holder">
-          <h1 className="tools heading">Tools</h1>
-          <hr />
-          <ul className="list">
-            <h3>
-              {data[0].tools.map((tools, index) => {
-                return <li key={index}>{tools}</li>;
-              })}
-            </h3>
-          </ul>
+      <div className="wrapper container">
+        <div className="display-4">I can work with</div>
+        <hr />
+        <div className="skills-holder row">
+          {data.skills.map((skill, index) => {
+            return (
+              <li
+                className="display-8 col-lg-4 col-md-4 col-sm-6 col-xs-10 h4"
+                key={index}
+              >
+                {skill}
+              </li>
+            );
+          })}
         </div>
       </div>
     </div>

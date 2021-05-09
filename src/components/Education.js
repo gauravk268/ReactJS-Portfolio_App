@@ -2,66 +2,75 @@ import React from "react";
 
 const Education = () => {
   return (
-    <div className="section-education">
-      <div className="heading">Education</div>
-      <hr />
-      <div className="holder">
-        <div className="edu-class">
-          <h1 className="head">B. Tech.</h1>
-          <div className="body">
-            <a href="http://mnnit.ac.in" target="_blank" rel="noreferrer">
-              <img
-                className="edu-logo"
-                src="/assets/images/mnnit.png"
-                alt="MNNIT icon"
-              />
-            </a>
-            <h2>MNNIT Allahabad, Prayagraj</h2>
-            <h3>
-              <strong>ECE: </strong> 7.25 (6th Sem)
-            </h3>
-          </div>
-        </div>
+    <div className="section-education p-5">
+      <div className="wrapper container">
+        <div className="display-4">Education</div>
+        <hr />
 
-        <div className="edu-class">
-          <h1 className="head">Class XII</h1>
-          <div className="body">
-            <a
-              href="https://www.navodaya.gov.in/nvs/nvs-school/SONBHADRA/en/home/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img
-                className="edu-logo"
-                src="/assets/images/jnv.jpeg"
-                alt="JNV Icon"
-              />
-            </a>
-            <h2>JNV Sonbhadra</h2>
-            <h3>
-              <strong>CBSE: </strong> 92.8%
-            </h3>
+        <div className="row text-center">
+          <div className="col-lg-4 col-md-4 col-sm-9 mb-2 d-flex">
+            <div className="card  pt-1 flex-fill">
+              <a href="http://mnnit.ac.in" target="_blank" rel="noreferrer">
+                <img
+                  className="card-img-top"
+                  src="/assets/images/mnnit.png"
+                  alt="MNNIT icon"
+                />
+              </a>
+              <div className="card-body">
+                <h4 className="card-title">B. Tech.</h4>
+                <p className="card-text">MNNIT Allahabad, Prayagraj</p>
+                <p className="card-text">
+                  <strong>ECE: </strong> 7.25 (6th Sem)
+                </p>
+              </div>
+            </div>
           </div>
-        </div>
 
-        <div className="edu-class">
-          <h1 className="head">Class X</h1>
-          <div className="body">
-            <a
-              href="https://www.navodaya.gov.in/nvs/nvs-school/SONBHADRA/en/home/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img
-                className="edu-logo"
-                src="/assets/images/jnv.jpeg"
-                alt="JNV Icon"
-              />
-            </a>
-            <h2>JNV Sonbhadra</h2>
-            <h3>
-              <strong>CBSE: </strong> 91.2%
-            </h3>
+          <div className="col-lg-4 col-md-4 col-sm-9 mb-2 d-flex">
+            <div className="card pt-1 flex-fill">
+              <a
+                href="https://www.navodaya.gov.in/nvs/nvs-school/SONBHADRA/en/home/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  className="card-img-top"
+                  src="/assets/images/jnv.jpeg"
+                  alt="JNV Icon"
+                />
+              </a>
+              <div className="card-body">
+                <h4 className="card-title">Intermediate</h4>
+                <p className="card-text">JNV Sonbhadra</p>
+                <p className="card-text">
+                  <strong>CBSE: </strong> 92.8%
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="col-lg-4 col-md-4 col-sm-9 mb-2 d-flex">
+            <div className="card pt-1 flex-fill">
+              <a
+                href="https://www.navodaya.gov.in/nvs/nvs-school/SONBHADRA/en/home/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  className="card-img-top"
+                  src="/assets/images/jnv.jpeg"
+                  alt="JNV Icon"
+                />
+              </a>
+              <div className="card-body">
+                <h4 className="card-title">High School</h4>
+                <p className="card-text">JNV Sonbhadra</p>
+                <p className="card-text">
+                  <strong>CBSE: </strong> 91.2%
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>

@@ -3,8 +3,8 @@ import React from "react";
 function Courses(props) {
   return (
     <div className="section-courses p-5">
-      <div className="wrapper">
-        <h1 className="heading">Courses</h1>
+      <div className="wrapper container">
+        <h1 className="display-4">Courses</h1>
         <hr />
         <ul>
           <h3>

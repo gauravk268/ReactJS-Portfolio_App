@@ -21,7 +21,15 @@ const Navbar = () => {
           <a href="/">Gaurav</a>
         </div>
       </div>
-      <div className="navbar-child navbar-right">{IsAtHome()}</div>
+      <div className="navbar-child navbar-right">
+        {/* <a
+          className="navbar-right-child navbar-item"
+          href="https://gauravk268.github.io/images/Resume_Gaurav_Kumar.pdf"
+        >
+          Resume
+        </a> */}
+        {IsAtHome()}
+      </div>
 
       <a className="btn top btn-primary" href="#brand">
         &#8682;
