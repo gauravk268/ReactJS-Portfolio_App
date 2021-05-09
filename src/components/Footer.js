@@ -2,7 +2,7 @@ import React from "react";
 
 function Footer(props) {
   return (
-    <div className="footer footer-dark text-center" id="contact">
+    <div className="footer footer-dark text-center">
       <img
         className="curve-site-footer"
         src="/assets/illustrations/curve-bottom-white.svg"

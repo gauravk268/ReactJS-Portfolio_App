@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import db from "./Firebase/config";
+import db from "./config/firebaseConfig";
 
 const Feedback = () => {
   const [feedTemp, setFeedTemp] = useState({

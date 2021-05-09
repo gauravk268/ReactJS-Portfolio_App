@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import db from "./Firebase/config";
+import db from "./config/firebaseConfig";
 import MsgCard from "./MsgCard";
 
 function ReadMsg(props) {

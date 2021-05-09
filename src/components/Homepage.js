@@ -8,7 +8,7 @@ import Achievements from "./Achievements";
 
 function Homepage(props) {
   return (
-    <div>
+    <div className="section-homepage">
       <About />
       <Education />
       <Skills />

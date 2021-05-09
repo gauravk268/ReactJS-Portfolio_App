@@ -17,6 +17,7 @@ body {
     "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  margin: 0;
 }
 
 code {
@@ -165,6 +166,7 @@ p {
   height: auto;
   border-radius: 50%;
   max-width: 300px;
+  z-index: 100;
 }
 
 .section-about .about,
