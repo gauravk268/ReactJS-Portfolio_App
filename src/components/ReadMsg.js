@@ -38,7 +38,7 @@ function ReadMsg(props) {
   return (
     <div className="section-readmsg section-feedback p-5">
       <div className="wrapper container">
-        <h1 className="heading">ReadMsg</h1>
+        <h1 className="display-6">ReadMsg</h1>
         <hr />
         {!submit && (
           <form>

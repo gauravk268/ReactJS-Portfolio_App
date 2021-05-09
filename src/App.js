@@ -1,7 +1,7 @@
 import React from "react";
 import { DataProvider } from "./components/contexts";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { Navbar, Homepage, ReadMsg, Feedback, Footer } from "./components";
+import { Navbar, Homepage, ReadMsg, Footer } from "./components";
 
 function App() {
   return (
@@ -12,7 +12,6 @@ function App() {
           <Switch>
             <Route path="/" exact component={() => <Homepage />} />
             <Route path="/msg" exact component={() => <ReadMsg />} />
-            <Route path="/contact" exact component={() => <Feedback />} />
             <Route path="*" component={() => <Homepage />} />
           </Switch>
           <Footer />

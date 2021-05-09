@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import db from "./config/firebaseConfig";
+import ScrollAnimation from "react-animate-on-scroll";
 
 const Feedback = () => {
   const [feedTemp, setFeedTemp] = useState({
@@ -40,9 +41,9 @@ const Feedback = () => {
   };
 
   return (
-    <div className="section-feedback" id="about">
+    <div className="section-feedback" id="contact">
       <div className="wrapper container">
-        <h1 className="feedback display-4">Get in touch</h1>
+        <h1 className="feedback display-6">Get in touch</h1>
         <div className="status">
           {sent ? (
             error === false ? (
@@ -69,69 +70,75 @@ const Feedback = () => {
           )}
         </div>
         <hr />
-        <div className="feedback-wrapper">
-          <form>
-            <div className="feedback-element feedback-head">
-              <div className="form-group">
-                <label for="name">
-                  <h3>Name</h3>
-                </label>
-                <input
-                  type="text"
-                  className="form-control"
-                  name="name"
-                  placeholder="Enter name"
-                  required=""
-                  value={feedTemp.name}
-                  onChange={(e) => {
-                    setFeedTemp({ ...feedTemp, name: e.target.value });
-                  }}
-                />
+        <ScrollAnimation
+          animateIn="fadeInRight"
+          animateOut="fadeOutLeft"
+          duration="1"
+        >
+          <div className="feedback-wrapper">
+            <form>
+              <div className="feedback-element feedback-head">
+                <div className="form-group pb-3">
+                  <label for="name">
+                    <p className="h5">Name</p>
+                  </label>
+                  <input
+                    type="text"
+                    className="form-control"
+                    name="name"
+                    placeholder="Enter name"
+                    required=""
+                    value={feedTemp.name}
+                    onChange={(e) => {
+                      setFeedTemp({ ...feedTemp, name: e.target.value });
+                    }}
+                  />
+                </div>
+                <div className="form-group pb-3">
+                  <label for="email">
+                    <p className="h5">Email address</p>
+                  </label>
+                  <input
+                    type="email"
+                    className="form-control"
+                    name="email"
+                    aria-describedby="emailHelp"
+                    placeholder="Enter email"
+                    required=""
+                    value={feedTemp.email}
+                    onChange={(e) => {
+                      setFeedTemp({ ...feedTemp, email: e.target.value });
+                    }}
+                  />
+                </div>
               </div>
-              <div className="form-group">
-                <label for="email">
-                  <h3>Email address</h3>
-                </label>
-                <input
-                  type="email"
-                  className="form-control"
-                  name="email"
-                  aria-describedby="emailHelp"
-                  placeholder="Enter email"
-                  required=""
-                  value={feedTemp.email}
-                  onChange={(e) => {
-                    setFeedTemp({ ...feedTemp, email: e.target.value });
-                  }}
-                />
-              </div>
-            </div>
 
-            <div className="feedback-element feedback-body">
-              <div className="form-group">
-                <label for="feedback">
-                  <h3>Message</h3>
-                </label>
-                <textarea
-                  className="form-control"
-                  name="feedback"
-                  value={feedTemp.msg}
-                  placeholder="Your message here"
-                  onChange={(e) => {
-                    setFeedTemp({ ...feedTemp, msg: e.target.value });
-                  }}
-                ></textarea>
+              <div className="feedback-element feedback-body">
+                <div className="form-group pb-3">
+                  <label for="feedback">
+                    <p className="h5">Message</p>
+                  </label>
+                  <textarea
+                    className="form-control"
+                    name="feedback"
+                    value={feedTemp.msg}
+                    placeholder="Your message here"
+                    onChange={(e) => {
+                      setFeedTemp({ ...feedTemp, msg: e.target.value });
+                    }}
+                  ></textarea>
+                </div>
+                <button
+                  onClick={handleSubmit}
+                  className="btn btn-primary my-2"
+                  disabled={saving}
+                >
+                  Send
+                </button>
               </div>
-              <button
-                onClick={handleSubmit}
-                className="btn btn-primary my-2"
-                disabled={saving}
-              >
-                Send
-              </button>
-            </div>
-          </form>
-        </div>
+            </form>
+          </div>
+        </ScrollAnimation>
       </div>
     </div>
   );

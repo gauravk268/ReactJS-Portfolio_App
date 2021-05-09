@@ -1,19 +1,4 @@
-import { useLocation } from "react-router-dom";
-
 const Navbar = () => {
-  const IsAtHome = () => {
-    if (useLocation().pathname === "/")
-      return (
-        <div className="nav-opt">
-          <a className="navbar-right-child navbar-item" href="#achiev">
-            Achievements
-          </a>
-          <a className="navbar-right-child navbar-item" href="/contact">
-            Contact
-          </a>
-        </div>
-      );
-  };
   return (
     <div className="navbar">
       <div className="navbar-child navbar-left">
@@ -28,7 +13,12 @@ const Navbar = () => {
         >
           Resume
         </a>
-        {IsAtHome()}
+        <a className="navbar-right-child navbar-item" href="#achiev">
+          Achievements
+        </a>
+        <a className="navbar-right-child navbar-item" href="#contact">
+          Contact
+        </a>
       </div>
 
       <a className="btn top btn-primary" href="#brand">

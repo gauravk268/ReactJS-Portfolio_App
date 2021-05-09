@@ -2,7 +2,7 @@ import React from "react";
 
 function ProjectCard(props) {
   return (
-    <div className="project-card col-lg-4 col-md-6 col-sm-10 mb-5 d-flex">
+    <div className="project-card col-lg-3 col-md-4 col-sm-6 col-xs-10 mb-5 mx-auto d-flex">
       <div className="card flex-fill">
         <img
           className="card-img-top"
@@ -10,10 +10,10 @@ function ProjectCard(props) {
           alt="Card cap"
         />
         <div className="card-body">
-          <h3 className="project-card card-title">
+          <h3 className="card-title h5">
             <strong>{props.project.title}</strong>
           </h3>
-          <p className="project-card card-text">{props.project.description}</p>
+          <p className="h6 card-text">{props.project.description}</p>
         </div>
         <div className="card-footer">
           {props.project.seeMoreLink && (
