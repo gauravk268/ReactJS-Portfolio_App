@@ -5,17 +5,14 @@ function Skills(props) {
   const { data } = useData();
 
   return (
-    <div className="section-skills p-5">
+    <div className="section-skills">
       <div className="wrapper container">
         <div className="display-4">I can work with</div>
         <hr />
-        <div className="skills-holder row">
+        <div className="skills-holder text-center">
           {data.skills.map((skill, index) => {
             return (
-              <li
-                className="display-8 col-lg-4 col-md-4 col-sm-6 col-xs-10 h4"
-                key={index}
-              >
+              <li className="display-8 btn btn-info h4 mx-2" key={index}>
                 {skill}
               </li>
             );

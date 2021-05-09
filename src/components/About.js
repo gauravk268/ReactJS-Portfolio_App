@@ -1,15 +1,15 @@
 import React from "react";
-// import Particles from "react-particles-js";
-// import particlesConfig from "./config/particlesConfig";
+import Particles from "react-particles-js";
+import particlesConfig from "./config/particlesConfig";
 import { useData } from "./contexts";
 
 const About = () => {
   const { loading, data } = useData();
   return (
     <div className="section-about text-center">
-      {/* <div style={{ position: "absolute" }}>
-        <Particles height="100vh" width="100%" params={particlesConfig} />
-      </div> */}
+      <div style={{ position: "absolute" }}>
+        <Particles height="100vh" width="100vw" params={particlesConfig} />
+      </div>
 
       <div className="wrapper">
         <div className="about desc p-5">
@@ -25,11 +25,6 @@ const About = () => {
           alt="gaurav"
         />
       </div>
-      <img
-        className="curve-bottom"
-        alt="curve header"
-        src="/assets/illustrations/curve-top-white.svg"
-      />
     </div>
   );
 };

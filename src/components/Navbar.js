@@ -4,7 +4,7 @@ const Navbar = () => {
   const IsAtHome = () => {
     if (useLocation().pathname === "/")
       return (
-        <div>
+        <div className="nav-opt">
           <a className="navbar-right-child navbar-item" href="#achiev">
             Achievements
           </a>
@@ -22,12 +22,12 @@ const Navbar = () => {
         </div>
       </div>
       <div className="navbar-child navbar-right">
-        {/* <a
+        <a
           className="navbar-right-child navbar-item"
           href="https://gauravk268.github.io/images/Resume_Gaurav_Kumar.pdf"
         >
           Resume
-        </a> */}
+        </a>
         {IsAtHome()}
       </div>
 

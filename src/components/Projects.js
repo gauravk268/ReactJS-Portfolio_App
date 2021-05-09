@@ -6,7 +6,7 @@ function Projects(props) {
   const { data } = useData();
 
   return (
-    <div className="section-project p-5" id="projects">
+    <div className="section-project" id="projects">
       <div className="wrapper container">
         <h1 className="display-4">Projects</h1>
         <hr />

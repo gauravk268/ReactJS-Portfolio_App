@@ -40,7 +40,7 @@ const Feedback = () => {
   };
 
   return (
-    <div className="section-feedback p-5" id="about">
+    <div className="section-feedback" id="about">
       <div className="wrapper container">
         <h1 className="feedback display-4">Get in touch</h1>
         <div className="status">

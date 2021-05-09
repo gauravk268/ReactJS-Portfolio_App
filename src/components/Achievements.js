@@ -4,7 +4,7 @@ import { useData } from "./contexts";
 function Achievements(props) {
   const { data } = useData();
   return (
-    <div className="section-achiev p-5" id="achiev">
+    <div className="section-achiev" id="achiev">
       <div className="wrapper container">
         <h1 className="display-4">Achievements</h1>
         <hr />
