@@ -70,64 +70,65 @@ const Feedback = () => {
           )}
         </div>
         <hr />
-        <ScrollAnimation
-          animateIn="fadeInRight"
-          animateOut="fadeOutLeft"
-          duration="1"
-        >
-          <div className="feedback-wrapper">
-            <form>
-              <div className="feedback-element feedback-head">
-                <div className="form-group pb-3">
-                  <label for="name">
-                    <p className="h5">Name</p>
-                  </label>
-                  <input
-                    type="text"
-                    className="form-control"
-                    name="name"
-                    placeholder="Enter name"
-                    required=""
-                    value={feedTemp.name}
-                    onChange={(e) => {
-                      setFeedTemp({ ...feedTemp, name: e.target.value });
-                    }}
-                  />
-                </div>
-                <div className="form-group pb-3">
-                  <label for="email">
-                    <p className="h5">Email address</p>
-                  </label>
-                  <input
-                    type="email"
-                    className="form-control"
-                    name="email"
-                    aria-describedby="emailHelp"
-                    placeholder="Enter email"
-                    required=""
-                    value={feedTemp.email}
-                    onChange={(e) => {
-                      setFeedTemp({ ...feedTemp, email: e.target.value });
-                    }}
-                  />
-                </div>
-              </div>
 
-              <div className="feedback-element feedback-body">
-                <div className="form-group pb-3">
-                  <label for="feedback">
-                    <p className="h5">Message</p>
-                  </label>
-                  <textarea
-                    className="form-control"
-                    name="feedback"
-                    value={feedTemp.msg}
-                    placeholder="Your message here"
-                    onChange={(e) => {
-                      setFeedTemp({ ...feedTemp, msg: e.target.value });
-                    }}
-                  ></textarea>
-                </div>
+        <div className="feedback-wrapper">
+          <form>
+            <div className="feedback-element feedback-head">
+              <div className="form-group pb-3">
+                <label for="name">
+                  <p className="h5">Name</p>
+                </label>
+                <input
+                  type="text"
+                  className="form-control"
+                  name="name"
+                  placeholder="Enter name"
+                  required=""
+                  value={feedTemp.name}
+                  onChange={(e) => {
+                    setFeedTemp({ ...feedTemp, name: e.target.value });
+                  }}
+                />
+              </div>
+              <div className="form-group pb-3">
+                <label for="email">
+                  <p className="h5">Email address</p>
+                </label>
+                <input
+                  type="email"
+                  className="form-control"
+                  name="email"
+                  aria-describedby="emailHelp"
+                  placeholder="Enter email"
+                  required=""
+                  value={feedTemp.email}
+                  onChange={(e) => {
+                    setFeedTemp({ ...feedTemp, email: e.target.value });
+                  }}
+                />
+              </div>
+            </div>
+
+            <div className="feedback-element feedback-body">
+              <div className="form-group pb-3">
+                <label for="feedback">
+                  <p className="h5">Message</p>
+                </label>
+                <textarea
+                  className="form-control"
+                  name="feedback"
+                  value={feedTemp.msg}
+                  placeholder="Your message here"
+                  onChange={(e) => {
+                    setFeedTemp({ ...feedTemp, msg: e.target.value });
+                  }}
+                ></textarea>
+              </div>
+              <ScrollAnimation
+                animateIn="zoomInDown"
+                animateOut="fadeOutRight"
+                duration="1"
+              >
                 <button
                   onClick={handleSubmit}
                   className="btn btn-primary my- w-25"
@@ -135,10 +136,10 @@ const Feedback = () => {
                 >
                   Send
                 </button>
-              </div>
-            </form>
-          </div>
-        </ScrollAnimation>
+              </ScrollAnimation>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   );
