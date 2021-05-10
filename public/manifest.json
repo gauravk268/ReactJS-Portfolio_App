@@ -31,10 +31,17 @@
       "icons": [{ "src": "logo192.png", "sizes": "192x192" }]
     },
     {
+      "name": "Achievements",
+      "short_name": "Achievements",
+      "description": "See achievements of Gaurav.",
+      "url": "/#achievements",
+      "icons": [{ "src": "logo192.png", "sizes": "192x192" }]
+    },
+    {
       "name": "Contact",
       "short_name": "Contact",
       "description": "Send a message to Gaurav.",
-      "url": "/contact",
+      "url": "/#contact",
       "icons": [{ "src": "logo192.png", "sizes": "192x192" }]
     }
   ]

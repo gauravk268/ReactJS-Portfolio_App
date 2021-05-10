@@ -36,7 +36,7 @@ function ReadMsg(props) {
   };
 
   return (
-    <div className="section-readmsg section-feedback p-5">
+    <section className="readmsg feedback p-5">
       <div className="wrapper container">
         <h1 className="display-6">ReadMsg</h1>
         <hr />
@@ -95,7 +95,7 @@ function ReadMsg(props) {
           <h2 className="alert alert-info">No messages until now.</h2>
         )}
       </div>
-    </div>
+    </section>
   );
 }
 

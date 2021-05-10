@@ -7,7 +7,7 @@ function Projects(props) {
   const { data } = useData();
 
   return (
-    <div className="section-project" id="projects">
+    <section className="projects" id="projects">
       <div className="wrapper container">
         <h1 className="display-6">Projects</h1>
         <hr />
@@ -23,7 +23,7 @@ function Projects(props) {
           </div>
         </ScrollAnimation>
       </div>
-    </div>
+    </section>
   );
 }
 

@@ -42,16 +42,26 @@ a:focus {
   color: white;
 }
 
+.btn {
+  z-index: 10;
+}
+
 .section-education {
   padding: 0 3rem 3rem 3rem;
 }
 
+section.projects {
+  padding: 3rem 0;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+}
+
 .section-skills,
-.section-project,
 .section-courses,
 .section-achiev,
 .section-feedback,
-.section-msgcard {
+section.readmsg {
   padding: 3rem;
   min-height: 70vh;
   display: flex;
@@ -63,32 +73,39 @@ a:focus {
     padding: 0 1rem 1rem 1rem;
   }
 
+  section.projects {
+    padding: 1rem 0;
+  }
+
   .section-skills,
   .section-courses,
   .section-achiev,
   .section-feedback,
-  .section-msgcard {
+  section.readmsg {
     padding: 1rem;
+    min-height: 0;
   }
 }
 
 /* Navbar Component Styling Starts */
 
-.navbar {
+nav.navbar {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-content: center;
-  /* background: linear-gradient(90deg, #8e2de2 0%, rgba(74, 0, 224, 0.84) 98.64%),
-    #ffffff; */
-  /* opacity: 0.5; */
   z-index: 10;
+  padding: 0 1rem;
 }
 
 .navbar-left {
   flex: 1;
   float: left;
-  text-align: center;
+  text-align: left;
+}
+
+.nav-gap {
+  flex: 1;
 }
 
 .navbar-right {
@@ -97,9 +114,9 @@ a:focus {
   text-align: center;
 }
 
-.navbar-brand a {
+nav .navbar-brand a {
   color: white;
-  font-weight: 900;
+  font-weight: 700;
   font-family: "Montserrat", "Poppins", sans-serif;
 }
 
@@ -107,11 +124,36 @@ a:focus {
   color: white;
   font-weight: bold;
   font-family: "Montserrat", "Poppins", sans-serif;
-  padding: 0 2rem;
+  padding: 0 1rem;
 }
 
-.nav-opt {
-  display: inline;
+.navbar-hidden-right {
+  display: none;
+  position: absolute;
+  top: 0.2rem;
+  right: 0.5rem;
+}
+
+.navbar-hidden-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: absolute;
+  top: 3rem;
+  right: 0.2rem;
+  text-align: right;
+}
+
+a.navbar-hidden-item {
+  color: white;
+  font-weight: bold;
+  font-family: "Montserrat", "Poppins", sans-serif;
+}
+
+.navbar-hidden-item {
+  flex: 1;
+  font-size: 1.2rem;
+  line-height: 2rem;
 }
 
 .navbar .btn.top {
@@ -123,6 +165,24 @@ a:focus {
   color: white;
   font-weight: 900;
   box-shadow: none;
+}
+
+@media only screen and (max-width: 750px) {
+  .nav-gap {
+    flex: 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  nav .navbar-right {
+    display: none;
+  }
+
+  .navbar-hidden-right {
+    display: block;
+    color: white;
+    font-size: 2rem;
+  }
 }
 
 /* Navbar Component Styling Ends */
@@ -430,11 +490,9 @@ section.project-card:focus .project-card-overlay {
 
 /* Msg Component Styling Ends */
 
-.section-readmsg {
-  min-height: 70vh;
-}
-.section-readmsg input {
+section.readmsg form {
   max-width: 700px;
+  margin: 0 auto;
 }
 
 .section-msgcard {
@@ -475,6 +533,29 @@ section.project-card:focus .project-card-overlay {
 }
 
 /* 404 Component Styling Ends */
+
+/* Slide Component Styling Starts */
+
+.menu-item {
+  padding: 0 40px;
+  margin: 5px 10px;
+  user-select: none;
+  cursor: pointer;
+  border: none;
+}
+.menu-item-wrapper.active {
+  border: 1px blue solid;
+}
+.menu-item.active {
+  border: 1px green solid;
+}
+
+.scroll-menu-arrow {
+  padding: 20px;
+  cursor: pointer;
+}
+
+/* Slide Component Styling Ends */
 
 @media only screen and (max-width: 768px) {
   .navbar-brand a {

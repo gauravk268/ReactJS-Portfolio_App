@@ -13,8 +13,8 @@ const Education = () => {
           duration="1"
         >
           <div className="row text-center">
-            <div className="col-lg-4 col-md-4 col-sm-9 mb-2 d-flex">
-              <div className="card  pt-1 flex-fill">
+            <div className="col-lg-4 col-md-4 col-sm-9 mb-2 d-flex mx-auto">
+              <div className="card pt-1 flex-fill">
                 <a href="http://mnnit.ac.in" target="_blank" rel="noreferrer">
                   <img
                     className="card-img-top"
@@ -23,7 +23,7 @@ const Education = () => {
                   />
                 </a>
                 <div className="card-body">
-                  <h4 className="card-title">B. Tech.</h4>
+                  <h4 className="card-title text-left">B. Tech.</h4>
                   <p className="card-text">MNNIT Allahabad, Prayagraj</p>
                   <p className="card-text">
                     <strong>ECE: </strong> 7.25 (6th Sem)
@@ -32,7 +32,7 @@ const Education = () => {
               </div>
             </div>
 
-            <div className="col-lg-4 col-md-4 col-sm-9 mb-2 d-flex">
+            <div className="col-lg-4 col-md-4 col-sm-9 mb-2 d-flex mx-auto">
               <div className="card pt-1 flex-fill">
                 <a
                   href="https://www.navodaya.gov.in/nvs/nvs-school/SONBHADRA/en/home/"
@@ -55,7 +55,7 @@ const Education = () => {
               </div>
             </div>
 
-            <div className="col-lg-4 col-md-4 col-sm-9 mb-2 d-flex">
+            <div className="col-lg-4 col-md-4 col-sm-9 mb-2 d-flex mx-auto">
               <div className="card pt-1 flex-fill">
                 <a
                   href="https://www.navodaya.gov.in/nvs/nvs-school/SONBHADRA/en/home/"

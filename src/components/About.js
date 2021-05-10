@@ -15,9 +15,6 @@ const About = () => {
         <div className="about desc p-5">
           <h1 className="heading h1">Hey, I'm Gaurav</h1>
           <h2>{!loading && data.aboutMsg}</h2>
-          <a className="btn btn-info" href="#projects">
-            My Projects
-          </a>
         </div>
         <img
           className="avatar"
