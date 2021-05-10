@@ -307,8 +307,9 @@ section.skills .wrapper .btn-info {
 
 /* Project Component Styling Starts */
 
-section.project .wrapper .row {
-  max-width: 1300px;
+section.projects .wrapper .row {
+  max-width: 1150px;
+  margin: 0 auto;
 }
 
 .project-card {
