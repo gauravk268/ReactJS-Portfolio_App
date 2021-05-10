@@ -2,7 +2,6 @@ import { useState } from "react";
 
 const Navbar = () => {
   const [hiddenState, setHiddenState] = useState(false);
-  var count = 1;
   const handleMenu = () => {
     setHiddenState(!hiddenState);
   };
