@@ -246,6 +246,10 @@ a:focus {
 
 /* Project Component Styling Starts */
 
+section.project .wrapper .row {
+  max-width: 1300px;
+}
+
 .project-card.title {
   color: rgba(0, 0, 0, 0.7);
 }
