@@ -2,7 +2,7 @@ import React from "react";
 
 function ProjectCard(props) {
   return (
-    <section className="project-card col-lg-3 col-md-4 col-sm-5 col-xs-12 mb-5 d-flex">
+    <section className="project-card col-lg-4 col-md-5 col-sm-6 col-xs-12 mb-5 d-flex">
       <div className="card flex-fill">
         <img
           className="card-img-top"

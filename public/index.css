@@ -259,14 +259,10 @@ a:focus {
   border: none;
 }
 
-/* .project-card .card {
+.project-card {
   margin: 0 auto;
-  max-width: 250px;
+  max-width: 300px;
 }
-
-.card-img-top {
-  max-width: 250px;
-} */
 
 .project-card .btn.btn-info {
   color: black;
