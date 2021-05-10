@@ -48,7 +48,7 @@ const Feedback = () => {
           {sent ? (
             error === false ? (
               <div className="alert alert-success">
-                Message saved successfully. Go to <a href="/">Home</a>{" "}
+                Message saved successfully.
               </div>
             ) : (
               <div className="alert alert-danger">
@@ -130,7 +130,7 @@ const Feedback = () => {
                 </div>
                 <button
                   onClick={handleSubmit}
-                  className="btn btn-primary my-2"
+                  className="btn btn-primary my- w-25"
                   disabled={saving}
                 >
                   Send
