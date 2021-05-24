@@ -46,8 +46,8 @@
 
 ## Contribute:
 
-  - Issue Tracker: http://github.com/gauravk268/React-Portfolio-App/issues
-  - Source Code: http://github.com/gauravk268/React-Portfolio-App
+  - Issue Tracker: http://github.com/gauravk268/ReactJS-Portfolio_App/issues
+  - Source Code: http://github.com/gauravk268/ReactJS-Portfolio_App
 
 ## License:
 
