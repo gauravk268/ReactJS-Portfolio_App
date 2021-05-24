@@ -25,7 +25,7 @@
 
 ## Local Installation and Setup Instructions:
 
-  Clone down this repository and cd to React-Store-App. You will need `node` and `npm` installed globally on your machine.  
+  Clone down this repository and cd to ReactJS-Portfolio_App. You will need `node` and `npm` installed globally on your machine.  
 
   Installation:
 
