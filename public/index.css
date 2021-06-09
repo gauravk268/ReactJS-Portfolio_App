@@ -352,6 +352,10 @@ section.projects .wrapper .row {
   background: url(./assets/images/overlay-bg.png) repeat;
 }
 
+section.projects .Container{
+  display: none;
+}
+
 /* .card-footer:hover {
   animation-duration: 3s;
   animation-name: slidein;
@@ -641,9 +645,17 @@ section.readmsg form {
     padding-left: 0;
   }
 
-  .section-project .project-card {
+  .project-card {
     margin: 0 auto;
     padding: 0 auto;
+  }
+
+  section.projects .row{
+    display: none;
+  }
+
+  section.projects .Container{
+    display: block;
   }
 
   .section-courses .wrapper li {

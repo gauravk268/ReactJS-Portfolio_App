@@ -15,13 +15,11 @@ function Projects(props) {
         <h1 className="display-6">Projects</h1>
         <hr />
         <div className="row">
-          
           {data.projects.map((project) => {
             return <ProjectCard project={project} key={project.key} />;
           })}
-
-          <Slider projects={data.projects} />
         </div>
+        <Slider projects={data.projects} />
       </div>
     </section>
   );
@@ -29,19 +27,33 @@ function Projects(props) {
 
 function Slider({ projects }) {
   const CarouselUI = ({ position, total, handleClick, children }) => (
-    <div className="Conatainer">
+    <div className="Container">
       <div className="Children">
         {children}
-        <div className="Arrow Left" onClick={handleClick} data-position={position - 1}>
+        <div
+          className="Arrow Left"
+          onClick={handleClick}
+          data-position={position - 1}
+        >
           {"<"}
         </div>
-        <div className="Arrow Right" right onClick={handleClick} data-position={position + 1}>
+        <div
+          className="Arrow Right"
+          right
+          onClick={handleClick}
+          data-position={position + 1}
+        >
           {">"}
         </div>
       </div>
       <div className="Dots">
         {Array(...Array(total)).map((val, index) => (
-          <div className="Dot" key={index} onClick={handleClick} data-position={index}>
+          <div
+            className="Dot"
+            key={index}
+            onClick={handleClick}
+            data-position={index}
+          >
             {index === position ? "● " : "○ "}
           </div>
         ))}
