@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useLocation } from 'react-router-dom';
 
 const Navbar = () => {
   const [hiddenState, setHiddenState] = useState(false);
@@ -6,8 +7,14 @@ const Navbar = () => {
     setHiddenState(!hiddenState);
   };
 
+  const loc=useLocation().pathname;
+  const navStyle=(loc!=="/")?{
+    background:`linear-gradient(90deg, #8e2de2 0%, rgba(74, 0, 224, 0.84) 98.64%)`,
+  }:{};
+  console.log(loc); 
+
   return (
-    <nav className="navbar">
+    <nav className="navbar" style={navStyle}>
       <div className="navbar-child navbar-left">
         <div className="navbar-brand" id="brand">
           <a href="/">Gaurav</a>

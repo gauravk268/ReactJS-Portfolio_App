@@ -9,12 +9,14 @@ function App() {
       <Router>
         <div className="App">
           <Navbar />
+
           <Switch>
             <Route path="/" exact component={() => <Homepage />} />
             <Route path="/msg" exact component={() => <ReadMsg />} />
             <Route path="/pics" exact component={() => <Pictures />} />
             <Route path="*" component={() => <Homepage />} />
           </Switch>
+
           <Footer />
         </div>
       </Router>
