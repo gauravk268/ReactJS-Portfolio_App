@@ -11,7 +11,7 @@ const Navbar = () => {
   const navStyle=(loc!=="/")?{
     background:`linear-gradient(90deg, #8e2de2 0%, rgba(74, 0, 224, 0.84) 98.64%)`,
   }:{};
-  console.log(loc); 
+  // console.log(loc); 
 
   return (
     <nav className="navbar" style={navStyle}>
@@ -28,7 +28,7 @@ const Navbar = () => {
         >
           Resume
         </a>
-        <a className="navbar-right-child navbar-item" href="#projects">
+        <a className="navbar-right-child navbar-item" style={loc!=="/" && {display:"none"}} href="#projects">
           Projects
         </a>
         <a className="navbar-right-child navbar-item" href="#achiev">
