@@ -8,7 +8,8 @@ const Navbar = () => {
   };
 
   const loc = useLocation().pathname;
-  let navStyle={}, hiddenMenuStyle={};
+  let navStyle = {},
+    hiddenMenuStyle = {};
   if (loc !== "/") {
     navStyle = {
       background: `linear-gradient(90deg, #8e2de2 0%, rgba(74, 0, 224, 0.84) 98.64%)`,
@@ -35,10 +36,7 @@ const Navbar = () => {
         >
           Resume
         </a>
-        <a
-          className="navbar-right-child navbar-item"
-          href="#projects"
-        >
+        <a className="navbar-right-child navbar-item" href="#projects">
           Projects
         </a>
         <a className="navbar-right-child navbar-item" href="#achiev">
