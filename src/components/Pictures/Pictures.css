@@ -1,19 +1,13 @@
-section.project{
+section.captures{
   scroll-behavior: smooth;
   text-align: center;
 }
 
-section.project h1.heading{
-  margin: 2rem auto;
-  text-align: center;
-  color: white;
-  font-family: ui-sans-serif, ui-monospace, times;
-  font-size: 6rem;
-  padding: 4rem 0;
-  font-weight: 900;
+section.captures h1.display-6{
+  font-weight: 5  00;
 }
 
-section.project img.pic.thumbnail{
+section.captures img.pic.thumbnail{
   max-width: 360px;
   max-height: 240px;
   height: 240px;
@@ -30,16 +24,16 @@ section.project img.pic.thumbnail{
 }
 
 @media only screen and (max-width:1024px){
-  section.project{  
+  section.captures{  
     margin: 0;
   }
 
-  section.project h1.heading{
+  section.captures h1.heading{
     font-size: 4rem;
     padding: 3rem 0;
   }
 
-  section.project img.pic{
+  section.captures img.pic{
     margin: 0.25rem 0;
   }
 }

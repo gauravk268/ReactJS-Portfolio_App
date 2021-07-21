@@ -54,7 +54,7 @@ function Pictures(props) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <section className="project">
+    <section className="captures">
       <h1 className="display-6">Captures</h1>
 
       <div className="pic-wrapper">
