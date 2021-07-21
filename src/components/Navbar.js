@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useLocation } from 'react-router-dom';
+import { useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const [hiddenState, setHiddenState] = useState(false);
@@ -7,11 +7,18 @@ const Navbar = () => {
     setHiddenState(!hiddenState);
   };
 
-  const loc=useLocation().pathname;
-  const navStyle=(loc!=="/")?{
-    background:`linear-gradient(90deg, #8e2de2 0%, rgba(74, 0, 224, 0.84) 98.64%)`,
-  }:{};
-  console.log(loc); 
+  const loc = useLocation().pathname;
+  let navStyle={}, hiddenMenuStyle={};
+  if (loc !== "/") {
+    navStyle = {
+      background: `linear-gradient(90deg, #8e2de2 0%, rgba(74, 0, 224, 0.84) 98.64%)`,
+    };
+    hiddenMenuStyle = {
+      color: "rgb(99, 20, 177)",
+      backgroundColor: "#FFEEFF",
+      padding: "1vw",
+    };
+  }
 
   return (
     <nav className="navbar" style={navStyle}>
@@ -28,7 +35,10 @@ const Navbar = () => {
         >
           Resume
         </a>
-        <a className="navbar-right-child navbar-item" href="#projects">
+        <a
+          className="navbar-right-child navbar-item"
+          href="#projects"
+        >
           Projects
         </a>
         <a className="navbar-right-child navbar-item" href="#achiev">
@@ -45,28 +55,37 @@ const Navbar = () => {
           <div className="navbar-hidden-menu">
             <a
               className="navbar-hidden-item"
+              style={hiddenMenuStyle}
               href="https://gauravk268.github.io/images/Resume_Gaurav_Kumar.pdf"
             >
               Resume
             </a>
-            <a className="navbar-hidden-item" href="#projects">
+            <a
+              className="navbar-hidden-item"
+              style={hiddenMenuStyle}
+              href="#projects"
+            >
               Projects
             </a>
-            <a className="navbar-hidden-item" href="#achiev">
+            <a
+              className="navbar-hidden-item"
+              style={hiddenMenuStyle}
+              href="#achiev"
+            >
               Achievements
             </a>
-            <a className="navbar-hidden-item" href="#contact">
+            <a
+              className="navbar-hidden-item"
+              style={hiddenMenuStyle}
+              href="#contact"
+            >
               Contact
             </a>
           </div>
         )}
       </div>
 
-      <a
-        className="btn top btn-primary rounded-circle btn"
-        onClick=""
-        href="#brand"
-      >
+      <a className="btn top btn-primary rounded-circle btn" href="#brand">
         &#8682;
       </a>
     </nav>

@@ -16,7 +16,8 @@ export function DataProvider({ children }) {
       fetch("https://gauravk268.github.io/assets/data/data.json")
         .then((response) => response.json())
         .then((data) => {
-          setData(data);
+          if(data!==undefined) setData(data);
+          // console.log("data", data);
         });
     };
 

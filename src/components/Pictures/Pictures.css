@@ -36,4 +36,9 @@ section.captures img.pic.thumbnail{
   section.captures img.pic{
     margin: 0.25rem 0;
   }
+
+  section.captures img.pic.thumbnail{
+    /* height: ; */
+    width: 90vw;
+  }
 }
