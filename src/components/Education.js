@@ -27,7 +27,7 @@ const Education = () => {
                 <h4 className="card-title text-left">B. Tech.</h4>
                 <p className="card-text">MNNIT Allahabad, Prayagraj</p>
                 <p className="card-text">
-                  <strong>ECE: </strong> 7.25 (6th Sem)
+                  <strong>ECE: </strong> 7.59 (upto 6th Sem)
                 </p>
               </div>
             </div>
