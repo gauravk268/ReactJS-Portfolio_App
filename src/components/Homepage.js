@@ -11,7 +11,7 @@ function Homepage(props) {
   return (
     <div className="section-homepage">
       <About />
-      <Education />
+      {/* <Education /> */}
       <Skills />
       <Projects />
       <Courses />
