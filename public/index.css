@@ -22,7 +22,8 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
 }
 
 .display-4 {
@@ -45,9 +46,7 @@ a:focus {
   z-index: 10;
 }
 
-.section-education {
-  padding: 0 3rem 3rem 3rem;
-}
+/* .section-education, */
 
 section.projects {
   padding: 3rem 0;
@@ -56,7 +55,7 @@ section.projects {
   align-items: center;
 }
 
-section.skills,
+/* section.skills, */
 .section-courses,
 .section-achiev,
 .section-feedback,
@@ -138,7 +137,7 @@ nav .navbar-brand a {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  position: absolute;
+  /* position: absolute; */
   top: 3rem;
   right: 0.2rem;
   text-align: right;
@@ -282,10 +281,13 @@ a.navbar-hidden-item {
 /* Skills Component Styling Starts */
 
 section.skills {
-  margin-top: 100vh;
+  margin-top: 90vh;
   background: rgba(0, 0, 0, 0.1);
   display: flex;
   align-items: center;
+  padding: 0 3rem 3rem 3rem;
+  min-height: 70vh;
+  display: flex;
 }
 
 section.skills .wrapper .skills-holder ScrollAnimation li {
