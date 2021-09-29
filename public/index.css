@@ -22,8 +22,7 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
 .display-4 {
@@ -283,6 +282,7 @@ a.navbar-hidden-item {
 /* Skills Component Styling Starts */
 
 section.skills {
+  margin-top: 100vh;
   background: rgba(0, 0, 0, 0.1);
   display: flex;
   align-items: center;
@@ -353,7 +353,7 @@ section.projects .wrapper .row {
   background: url(./assets/images/overlay-bg.png) repeat;
 }
 
-section.projects .Container{
+section.projects .Container {
   display: none;
 }
 
@@ -413,7 +413,6 @@ section.projects .Dot {
   text-shadow: 1px 1px 1px #fff;
   user-select: none;
 }
-
 
 /* Project Component Styling Ends */
 
@@ -681,11 +680,11 @@ section.readmsg form {
     padding: 0 auto;
   }
 
-  section.projects .row{
+  section.projects .row {
     display: none;
   }
 
-  section.projects .Container{
+  section.projects .Container {
     display: block;
   }
 
