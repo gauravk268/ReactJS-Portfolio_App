@@ -1,0 +1,39 @@
+/* Skills Component Styling Starts */
+
+section.skills {
+  margin-top: 90vh;
+  background: rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  min-height: 70vh;
+  display: flex;
+}
+
+section.skills .wrapper .skills-holder ScrollAnimation li {
+  display: inline;
+  /* border: 2px solid red; */
+}
+
+section.skills .skills-holder {
+  max-width: 100vh;
+  margin: 0 auto;
+}
+
+section.skills .wrapper .btn-info {
+  color: white;
+  border: none;
+  background-color: rgba(99, 20, 177, 0.8);
+}
+
+@media only screen and (max-width: 768px) {
+  .section.skills{
+    padding: 0;
+    padding-top: 1.5rem;
+  }
+
+  section.skills .display-6{
+    padding-left: 1rem;
+  }
+}
+
+/* Skills Component Styling Ends */

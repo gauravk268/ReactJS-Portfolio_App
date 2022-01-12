@@ -1,0 +1,41 @@
+/* Footer Component Styling Starts */
+
+.section-footer {
+  background: linear-gradient(90deg, #8e2de2 0%, rgba(74, 0, 224, 0.84) 98.64%),
+    #ffffff;
+  color: white;
+  padding-bottom: 1rem;
+  font-family: Poppins, "Courier New", Courier, monospace;
+  font-size: calc(0.5vh + 0.75rem);
+  bottom: 0;
+  position: absoltue;
+  padding: 3rem;
+}
+
+.section-footer .icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.footer-icon img {
+  flex: 1;
+  margin: 0 1rem;
+  height: 3rem;
+  width: auto;
+}
+
+@media only screen and (max-width: 768px) {
+  .section-footer .wrapper p {
+    padding: 0;
+  }
+
+  .section-footer {
+    padding: 0;
+    padding-bottom: 1rem;
+  }
+}
+
+/* Footer Component Styling Ends */

@@ -1,0 +1,100 @@
+/* Navbar Component Styling Starts */
+
+nav.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-content: center;
+  z-index: 10;
+  padding: 0 1rem;
+  height: 54px;
+}
+
+.navbar-left {
+  flex: 1;
+  float: left;
+  text-align: left;
+}
+
+.nav-gap {
+  flex: 1;
+}
+
+.navbar-right {
+  flex: 2;
+  float: right;
+  text-align: center;
+}
+
+nav .navbar-brand a {
+  color: white;
+  font-weight: 700;
+  font-family: "Montserrat", "Poppins", sans-serif;
+}
+
+.navbar-item {
+  color: white;
+  font-weight: bold;
+  font-family: "Montserrat", "Poppins", sans-serif;
+  padding: 0 1rem;
+}
+
+.navbar-hidden-right {
+  display: none;
+  position: absolute;
+  top: 0.2rem;
+  right: 0.5rem;
+}
+
+.navbar-hidden-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  /* position: absolute; */
+  top: 3rem;
+  right: 0.2rem;
+  text-align: right;
+}
+
+a.navbar-hidden-item {
+  color: white;
+  font-weight: bold;
+  font-family: "Montserrat", "Poppins", sans-serif;
+}
+
+.navbar-hidden-item {
+  flex: 1;
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
+.navbar .btn.top {
+  position: fixed;
+  right: 5vw;
+  bottom: 8vh;
+  border-radius: 45%;
+  z-index: 20;
+  color: white;
+  font-weight: 900;
+  box-shadow: none;
+}
+
+@media only screen and (max-width: 750px) {
+  .nav-gap {
+    flex: 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  nav .navbar-right {
+    display: none;
+  }
+
+  .navbar-hidden-right {
+    display: block;
+    color: white;
+    font-size: 2rem;
+  }
+}
+
+/* Navbar Component Styling Ends */

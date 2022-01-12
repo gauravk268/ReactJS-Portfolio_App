@@ -1,0 +1,16 @@
+/* Achievements Component Styling Starts */
+
+.section-achiev li {
+  line-height: 2.2rem;
+}
+
+.section-achiev ul {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.section-achiev .achiev.detail {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+/* Achievements Component Styling Ends */

@@ -1,0 +1,18 @@
+/* Education Component Styling Starts */
+
+.section-education {
+  margin-top: 100vh;
+}
+
+.section-education .card a img {
+  width: 10rem;
+  height: auto;
+}
+
+@media only screen and (max-width: 768px) {
+  .section-education .card a img {
+    display: none;
+  }
+}
+
+/* Education Component Styling Ends */

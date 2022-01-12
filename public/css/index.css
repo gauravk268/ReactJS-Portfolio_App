@@ -1,0 +1,202 @@
+@import "./components/About.css";
+@import "./components/Achievements.css";
+@import "./components/Courses.css";
+@import "./components/Education.css";
+@import "./components/Error404.css";
+@import "./components/Feedback.css";
+@import "./components/Footer.css";
+@import "./components/Homepage.css";
+@import "./components/index.css";
+@import "./components/Navbar.css";
+@import "./components/Projects.css";
+@import "./components/ReadMsg.css";
+@import "./components/Skills.css";
+
+:root {
+  --base-color-btn: rgba(99, 20, 177, 0.8);
+}
+
+html {
+  scroll-behavior: smooth;
+  max-width: 100vw;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", "Poppins", sans-serif, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.display-4 {
+  font-weight: 800;
+}
+
+.App {
+  margin: 0;
+  padding: 0;
+}
+
+a,
+a:hover,
+a:focus {
+  text-decoration: none;
+  color: white;
+}
+
+.btn {
+  z-index: 10;
+}
+
+/* .section-education, */
+
+section.projects {
+  padding: 3rem 0;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+}
+
+/* section.skills, */
+.section-courses,
+.section-achiev,
+.section-feedback,
+section.readmsg {
+  padding: 3rem;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .section-education {
+    padding: 0 1rem 1rem 1rem;
+  }
+
+  section.projects {
+    padding: 1rem 0;
+  }
+
+  .section-courses,
+  .section-achiev,
+  .section-feedback,
+  .section.readmsg {
+    padding: 1rem;
+    min-height: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar-brand a {
+    font-size: 1.25rem;
+  }
+
+  .navbar-item {
+    font-size: 1rem;
+  }
+
+  .navbar-item {
+    padding: 0 0.5rem;
+  }
+
+  .section-about {
+    padding-bottom: 1rem;
+  }
+
+  .section-about .curve-bottom {
+    display: none;
+  }
+
+  .section-education {
+    padding: 0 1.5rem;
+  }
+
+  .section-education .holder {
+    flex-direction: column;
+  }
+
+  .section-education .holder .edu-class {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    width: 100%;
+    border: 1px solid rgba(56, 62, 87, 0.3);
+    border-radius: 1rem;
+  }
+
+  .section-education .holder .edu-class .head {
+    flex: 1;
+    text-align: left;
+  }
+
+  .section-education .holder .edu-class .body {
+    flex: 3;
+    top: 80%;
+    bottom: 0;
+  }
+
+  .section-education .holder .edu-class .body {
+    border-left: 4px solid #4b6cc1;
+  }
+
+  .section-education .holder .edu-class .body a {
+    display: none;
+  }
+
+  .section-skills .wrapper {
+    flex-direction: column;
+    padding-left: 0;
+  }
+
+  .project-card {
+    margin: 0 auto;
+    padding: 0 auto;
+  }
+
+  section.projects .row {
+    display: none;
+  }
+
+  section.projects .Container {
+    display: block;
+  }
+
+  .section-courses .wrapper li {
+    line-height: 1.5rem;
+  }
+
+  .section-achiev li {
+    line-height: 1.6rem;
+  }
+
+  .section-feedback > .feedback-wrapper {
+    padding-left: 0;
+  }
+
+  .footer {
+    padding: 1rem 0;
+  }
+
+  .footer .curve-site-footer {
+    display: none;
+  }
+
+  .footer-icon img {
+    width: 9vw;
+  }
+}

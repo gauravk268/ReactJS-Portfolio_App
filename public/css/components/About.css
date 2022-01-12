@@ -1,0 +1,72 @@
+/* About Component Styling Starts */
+
+.section-about {
+  background: linear-gradient(90deg, #8e2de2 0%, rgba(74, 0, 224, 0.84) 98.64%),
+    #ffffff;
+  padding: 0;
+  margin: 0;
+  border: 1px solid white;
+
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+}
+
+.section-about .wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.section-about .about {
+  max-width: 600px;
+  line-height: 1.5rem;
+  text-align: left;
+}
+
+.section-about .wrapper .about h1 {
+  color: #fff;
+  font-family: "Montserrat", "Poppins", sans-serif;
+  padding: 0.9rem 0;
+}
+
+.section-about .wrapper .about h2 {
+  color: #cad5ec;
+  font-family: "Poppins", sans-serif;
+}
+
+.section-about .wrapper .about .btn {
+  background: white;
+  font-size: 1.5rem;
+  font-family: "Poppins", sans-serif;
+  color: rgba(99, 20, 177, 0.8);
+  border: none;
+  border: 1px solid black;
+  border-radius: 26px;
+  padding: 10px 20px;
+  margin: 1rem;
+}
+
+.section-about .avatar {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  max-width: 300px;
+  z-index: 100;
+}
+
+.section-about .about,
+.section-about .avatar {
+  flex: 1;
+}
+
+@media only screen and (max-width: 768px) {
+  .section-about .avatar {
+    display: none;
+  }
+}
+
+/* About Component Styling Ends */

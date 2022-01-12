@@ -1,0 +1,40 @@
+/* Feedback Component Styling Starts */
+
+.section-feedback {
+  background: rgba(129, 116, 116, 0.1);
+}
+
+.section-feedback button {
+  color: white;
+  background: rgba(99, 20, 177, 0.8);
+  border: none;
+}
+
+.section-feedback form {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.section-feedback > .feedback-wrapper {
+  max-width: 700px;
+  padding-left: 10%;
+  margin: 0 auto;
+}
+
+.section-feedback label {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.section-feedback textarea {
+  height: 7rem;
+}
+
+.section-feedback button {
+  border-radius: 1.5rem;
+}
+
+.section-feedback a {
+  color: black;
+}
+
+/* Feedback Component Styling Ends */

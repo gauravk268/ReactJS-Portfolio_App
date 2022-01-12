@@ -1,0 +1,24 @@
+/* Courses Component Styling Starts */
+
+.section-courses {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.section-courses ul {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.section-courses .wrapper li {
+  line-height: 2rem;
+}
+
+.course.main {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.course.desc {
+  color: #404040;
+}
+
+/* Courses Component Styling Ends */
