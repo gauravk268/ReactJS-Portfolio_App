@@ -42,7 +42,7 @@ section.projects .wrapper .row {
   height: 100%;
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
-  background: url(./assets/images/overlay-bg.png) repeat;
+  background: url(/assets/images/overlay-bg.png) repeat;
 }
 
 section.projects .Container {
